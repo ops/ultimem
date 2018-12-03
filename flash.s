@@ -34,10 +34,12 @@ cursa	= $b9			; current secondary address
 flash	= $6000			; base address of the flash ROM (BLK3)
 ultimem_bank = ultimem_blk3
 ultimem_blk_def = $10		; flash at BLK3; no expansion RAM
+ultimem_blk_mask = $cf
 #else
 flash	= $a000			; base address of the flash ROM (BLK5)
 ultimem_bank = ultimem_blk5
 ultimem_blk_def = $7f		; flash at BLK5, 24k RAM at BLK[123]
+ultimem_blk_mask = 0
 #endif
 
 f000	= flash			; flash address 0
@@ -155,11 +157,21 @@ id_ok	lda autosel_lo,x
 	setcolor(cOK)
 	lda #cTEXT
 	sta txtcolor
+#if ultimem_blk_mask
+	lda ultimem_blk
+	and #ultimem_blk_mask
+	ora #ultimem_blk_def
+#else
 	lda #ultimem_blk_def
+#endif
 	sta ultimem_blk		; flash ROM enable
 	lda #0
 	sta ultimem_bank	; bank select low
 	sta ultimem_bank + 1	; bank select high
+#if ultimem_cfg_noled
+	lda #ultimem_cfg_noled
+#endif
+	sta ultimem_cfg
 	ldy #$f0
 	sty flash		; poke x, $f0 (read array data)
 	ldx #$90		; $90 (autoselect)
@@ -258,13 +270,15 @@ error_println_exit
 	lda #$0d		; output a carriage return (line break)
 	jsr chrout
 	setcolor(cERR)		; flag error status
-exit
+exit				; exit to the operating system
 #if FILEIO
 	lda #1
 	jsr close
 	jsr clrchn
 #endif
-	lda #0			; exit
+	lda #ultimem_cfg_noled
+	sta ultimem_cfg
+	lda #0
 ultimem_blk_save = *-1
 	sta ultimem_blk
 	lda #0
@@ -296,6 +310,12 @@ op_do	pha
 	pha
 	lda optab,x
 	pha
+#if ultimem_cfg_led - ultimem_cfg_noled - 1
+	lda #ultimem_cfg_led
+	sta ultimem_cfg
+#else
+	inc ultimem_cfg
+#endif
 	rts
 op_unknown
 	printmsg(unknown_op)
@@ -401,11 +421,23 @@ op_all_complete
 	pla			; discard the return address
 	pla			; (return to caller's caller)
 #if FILEIO
+#if ultimem_cfg_led - ultimem_cfg_noled - 1
+	lda #ultimem_cfg_noled
+	sta ultimem_cfg
+#else
+	dec ultimem_cfg
+#endif
 	setcolor(cOK)
 	printmsg(operation_complete)
 	jmp exit
 #endif
 op_complete
+#if ultimem_cfg_led - ultimem_cfg_noled - 1
+	lda #ultimem_cfg_noled
+	sta ultimem_cfg
+#else
+	dec ultimem_cfg
+#endif
 	setcolor(cOK)
 	printmsg_rts(operation_complete)
 

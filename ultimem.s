@@ -314,6 +314,7 @@ CLR	= $93
 #define INIT	$13,$11,$11,$11,$11,$11,$11,$11,$11,$11
 #define UPPER	$8,$8e
 WHITE	= $5
+RED	= $1c
 GREEN	= $1e
 BLUE	= $1f
 YELLOW	= $9e
@@ -323,33 +324,35 @@ CR	= $0d
 #define rvs(x) RVS_ON,x,RVS_OFF
 #define rvs2(x,y) RVS_ON,x,y,RVS_OFF
 #define rvs3(x,y,z) RVS_ON,x,y,z,RVS_OFF
+#define rvs4(a,b,c,d) RVS_ON,a,b,c,d,RVS_OFF
+#define rvs5(a,b,c,d,e) RVS_ON,a,b,c,d,e,RVS_OFF
 
-initmsg	.byte CLR,UPPER,WHITE
-	.byte rvs($20)
-	.byte $20,rvs3($20,$a1,$b6)
+initmsg	.byte CLR,UPPER
+	.byte BLUE,rvs($20),$20
+	.byte rvs4($20,RED,$a1,$b6)
 	.byte $aa,rvs3($20,$20,$a1)
-	.byte $a1,RVS_ON,$20,$20,$20,$df,$a1,$20,RVS_OFF,$a1
+	.byte $a1,RVS_ON,BLUE,$20,$20,$20,$df,RED,$a1,$20,RVS_OFF,$a1
 	.byte RVS_ON,$20,$20,$20,$df,CR
 
-	.byte BLUE,rvs($20)
-	.byte $20,rvs3($20,$a1,$b6)
-	.byte $20,$a2,$20,$ac,$bb,rvs($20)
+	.byte BLUE,rvs($20),$20
+	.byte rvs4($20,RED,$a1,$b6)
+	.byte $20,$a2,$20,$ac,$bb,BLUE,rvs($20)
 	.byte $ac,$bb,rvs($20)
-	.byte $ac,$a2,$bb,rvs($20)
+	.byte RED,$ac,$a2,$bb,rvs($20)
 	.byte $ac,$bb,RVS_ON,$20,CR
 
-	.byte WHITE,rvs($20)
-	.byte $20,rvs3($20,$a1,$b6)
+	.byte BLUE,rvs($20),$20
+	.byte rvs4($20,RED,$a1,$b6)
 	.byte $20,rvs($20)
 	.byte $20,rvs($a1)
-	.byte $a1,rvs2($20,$a1)
-	.byte $a1,rvs3($20,$a1,$ac)
+	.byte $a1,BLUE,rvs2($20,$a1)
+	.byte $a1,rvs4($20,RED,$a1,$ac)
 	.byte $be,rvs2($20,$a1)
 	.byte $a1,RVS_ON,$20,CR
 
-	.byte BLUE,$df,RVS_ON,$20,$20,$a1,$20,$a7,RVS_OFF,$df,rvs2($20,$a1)
-	.byte $a1,rvs2($20,$a1)
-	.byte $a1,rvs3($20,$a1,$20)
+	.byte BLUE,$df,RVS_ON,$20,$20,RED,$a1,$20,$a7,RVS_OFF,$df,rvs2($20,$a1)
+	.byte $a1,BLUE,rvs2($20,$a1)
+	.byte $a1,rvs4($20,RED,$a1,$20)
 	.byte $a1,rvs2($20,$a1)
 	.byte $a1,RVS_ON,$20,CR
 
@@ -407,12 +410,6 @@ config1	.byte "Y",RVS_OFF
 banksel	.byte YELLOW, RVS_ON, " "
 bankcur	.byte "A ", WHITE, CR, 0
 
-	.byte 0
-bank_on	.byte YELLOW, RVS_ON, " ENABLED", WHITE, CR, 0
-bankoff	.byte YELLOW, RVS_ON, "DISABLED", WHITE, CR, 0
-#if (bank_on/256) - (bankoff/256)
-#error "page boundary crossed"
-#endif
 ultimem_not_detected
 	.byte "ULTIMEM NOT DETECTED", 0
 	;; UltiMem unit type identifier
@@ -427,6 +424,12 @@ presets	.byte BLK_EN|IO_EN, RAM123_EN|BLK_EN|IO_EN
 presets_end
 	;; powers of 2
 pow2	.byte 1,2,4,8,16,32,64
+
+bank_on	.byte YELLOW, RVS_ON, " ENABLED", WHITE, CR, 0
+bankoff	.byte YELLOW, RVS_ON, "DISABLED", WHITE, CR, 0
+#if (bank_on/256) - (bankoff/256)
+#error "page boundary crossed"
+#endif
 	;; RAM[123], I/O2 and I/O3 configuration table
 ioram_cfg
 	.byte $00, $03, $00, $03, $0c, $0f, $0c, $0f
