@@ -1,0 +1,24 @@
+#!
+# This file defines a sample menu structure for testing the UltiMem.
+# See filelist.txt for a more comprehensive menu structure.
+(
+"\xa4\xaf\xb9\xa8\xbbRETURN\xac\xa8\xb9\xaf\xa4"	ultimem.prg
+f1 # keyboard shortcut for the previous entry
+# The following line defines a label to the current directory position.
+*root.test
+# The following line references a label (subdirectory), defined below.
+"Test Programs"/test
+)
+# A hidden directory (not reachable via links from the root directory above)
+(
+"Flash Programmer"	flash4file.prg
+f8
+)
+(
+*test
+"_"/root.test
+"UltiMem RAM Test"	ramtest.prg
+f5
+"UltiMem BankTest"	banktest.prg
+f7
+)

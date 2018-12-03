@@ -1,0 +1,131 @@
+#!
+# This file defines the menu structure.
+# A menu is delimited by parenthesis ()
+# Menu entries may point to other entries, in the same menu or a different one.
+# This file is in the public domain.
+(
+*root.games.cart
+"Game Cartridges"/games.cart
+*root.games
+"Games"/games
+)
+
+# A hidden directory (not reachable via links from the root directory above)
+(
+"UltiMem Config"	ultimem.prg
+f1
+"UltiMem RAM Test"	ramtest.prg
+f5
+"UltiMem BankTest"	banktest.prg
+f7
+"Flash Programmer"	flash4file.prg
+f8
+)
+
+(
+*games.cart
+"_"/root.games.cart
+"A World at War"	vic20/roms/8k/A World at War.prg
+"AE"			vic20/roms/16k/AE-6000.prg
+			vic20/roms/16k/AE-a000.prg
+"Tooth Invaders"	vic20/roms/8k/Tooth Invaders.prg
+"Topper      NTSC"	vic20/roms/8k/Topper.NTSC.prg
+"Trashman"		vic20/roms/8k/Trashman.prg
+"Turmoil"		vic20/roms/8k/Turmoil.prg
+"Tutankhamon"		vic20/roms/8k/Tutankham.prg
+"Type Attack"		vic20/roms/8k/Type Attack.prg
+"Typo"			vic20/roms/8k/Typo.prg
+"Video Vermin"		vic20/roms/8k/Video Vermin.prg
+"Videomania"		vic20/roms/4k/Videomania.prg
+"Vis. Solar Syst."	vic20/roms/8k/Visible Solar System.prg
+#the image exceeds beyond $c000
+#"WackyWaitrs48896"	vic20/roms/8k/Wacky Waiters-sys48896.prg
+)
+(
+*games
+"_"/root.games
+*games.ref.16k
+"16k"/games.16k
+*games.ref.8k
+"8k"/games.8k
+*games.ref.3k
+"3k"/games.3k
+*games.ref.0k
+"0k"/games.0k
+*games.basic.ref.16k
+"16k      (BASIC)"/games.basic.16k
+*games.basic.ref.8k
+"8k       (BASIC)"/games.basic.8k
+*games.basic.ref.3k
+"3k       (BASIC)"/games.basic.3k
+*games.basic.ref.0k
+"0k       (BASIC)"/games.basic.0k
+)
+(
+*games.16k
+"_"/games.ref.16k
+"Bongo"			vic20/games/16k/Bongo.prg
+"Death Zone"		vic20/games/16k/Death Zone.prg
+"Fire Galaxy"		vic20/games/16k/Fire Galaxy.prg
+"Fourth Encounter"	vic20/games/16k/Fourth Encounter.prg
+"Galactic Abdctrs"	vic20/games/16k/Galactic Abductors.prg
+"Gunslinger"		vic20/games/16k/Gunslinger.prg
+"Krazy Kong"		vic20/games/16k/Krazy Kong.prg
+"Outworld"		vic20/games/16k/Outworld.prg
+"Perils of Willy"	vic20/games/16k/Perils of Willy.prg
+"Platform Game"		vic20/games/16k/Platform Game.prg
+"Seawolfe"		vic20/games/16k/Seawolfe.prg
+"Skramble"		vic20/games/16k/Skramble.prg
+"Star Defence"		vic20/games/16k/Star Defence.prg
+"Submarine Commander"	vic20/games/16k/Submarine Commander.prg
+"Tom"	   		vic20/games/16k/Tom.prg
+"Vic Chess"		vic20/games/16k/Vic Chess.prg
+"Xeno II"		vic20/games/16k/Xeno II.prg
+)
+(
+*games.8k
+"_"/games.ref.8k
+"3-deep Space"		vic20/games/8k/3-deep Space.prg
+"Andes Attack"		vic20/games/8k/Andes Attack.prg
+"Vicherman"		vic20/games/8k/Vicherman.prg
+)
+(
+*games.3k
+"_"/games.ref.3k
+"Arcadia"		vic20/games/3k/Arcadia.prg
+"Luftkampf"		vic20/games/3k/Luftkampf.prg
+)
+(
+*games.0k
+"_"/games.ref.0k
+"3D Silicon Fish"	vic20/games/unexpanded/3D Silicon Fish.prg
+"4 op een rij"		vic20/games/unexpanded/4 op een rij.prg
+"Vic Panic"		vic20/games/unexpanded/Vic Panic.prg
+"Vic Scramble"		vic20/games/unexpanded/Vic Scramble.prg
+"Wacky Waiters"		vic20/games/unexpanded/Wacky Waiters.prg
+)
+(
+*games.basic.16k
+"_"/games.basic.ref.16k
+"CrushCrumb&Chomp"	vic20/games.basic/16k/Crush Crumble and Chomp.prg
+)
+(
+*games.basic.8k
+"_"/games.basic.ref.8k
+"3D Labyrinth"		vic20/games.basic/8k/3D Labyrinth.prg
+"4 op een rij"		vic20/games.basic/8k/4 op een rij.prg
+"Zig Zago"		vic20/games.basic/8k/Zig Zago.prg
+)
+(
+*games.basic.3k
+"_"/games.basic.ref.3k
+"3D Doolhof"		vic20/games.basic/3k/3D Doolhof.prg
+"Zeeslag 2 Vic's"	vic20/games.basic/3k/Zeeslag 2 Vic's.prg
+"Zeeslag"		vic20/games.basic/3k/Zeeslag.prg
+)
+(
+*games.basic.0k
+"_"/games.basic.ref.0k
+"Word Game"		vic20/games.basic/unexpanded/Word Game.prg
+"Zap"			vic20/games.basic/unexpanded/Zap.prg
+)

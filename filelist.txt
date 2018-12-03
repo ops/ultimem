@@ -1,0 +1,1126 @@
+#!
+# This file defines the menu structure.
+# A menu is delimited by parenthesis ()
+# Menu entries may point to other entries, in the same menu or a different one.
+# This file is in the public domain.
+(
+*root.games.cart
+"Game Cartridges"/games.cart
+*root.games
+"Games"/games
+*root.tools.cart
+"Tool Cartridges"/tools.cart
+*root.demos.cart
+"Demo Cartridges"/demos.cart
+)
+
+# A hidden directory (not reachable via links from the root directory above)
+(
+"UltiMem Config"	ultimem.prg
+f1
+"UltiMem RAM Test"	ramtest.prg
+f5
+"UltiMem BankTest"	banktest.prg
+f7
+"Flash Programmer"	flash4file.prg
+f8
+)
+
+(
+*games.cart
+"_"/root.games.cart
+"A World at War"	vic20/roms/8k/A World at War.prg
+"AE"			vic20/roms/16k/AE-6000.prg
+			vic20/roms/16k/AE-a000.prg
+"Aggressor"		vic20/roms/8k/Aggressor.prg
+"Alien"			vic20/roms/8k/Alien.prg
+"Alien Blitz"		vic20/roms/4k/Alien Blitz.prg
+"Alien Sidestep"	vic20/roms/4k/Alien Sidestep.prg
+"Alphabet Zoo"		vic20/roms/16k/Alphabet Zoo-6000.prg
+			vic20/roms/16k/Alphabet Zoo-a000.prg
+"Amazing Maze"		vic20/roms/4k/Amazing Maze.prg
+"Amidar"		vic20/roms/8k/Amidar.prg
+"Amok!"			vic20/roms/4k/Amok!.prg
+"Ape Escape"		vic20/roms/8k/Ape Escape.prg
+"Apple Panic  PAL"	vic20/roms/8k/Apple Panic-6000.prg
+			vic20/roms/8k/Apple Panic-a000.prg
+"Apple Panic NTSC"	vic20/roms/8k/Apple Panic.prg
+"Arachnoid"		vic20/roms/16k/Arachnoid-6000.prg
+			vic20/roms/16k/Arachnoid-a000.prg
+"Arcadia"		vic20/roms/8k/Arcadia.prg
+"Artillery Duel"	vic20/roms/16k/Artillery Duel-6000.prg
+			vic20/roms/16k/Artillery Duel-a000.prg
+"Astroblitz   PAL"	vic20/roms/4k/Astroblitz.PAL.prg
+"Astroblitz  NTSC"	vic20/roms/4k/Astroblitz.NTSC.prg
+"Atlantis     PAL"	vic20/roms/4k/Atlantis.PAL.prg
+"Atlantis    NTSC"	vic20/roms/4k/Atlantis.NTSC.prg
+"Attack of the MC"	vic20/roms/8k/Attack of the Mutant Camels.prg
+"Avenger"		vic20/roms/8k/Avenger.prg
+"Bandits"		vic20/roms/8k/Bandits.prg
+"Bank Robber"		vic20/roms/8k/Bank Robber.prg
+"Battlezone"		vic20/roms/16k/Battlezone-6000.prg
+			vic20/roms/16k/Battlezone-a000.prg
+"Bewitched"		vic20/roms/4k/Bewitched.prg
+"Black Hole   PAL"	vic20/roms/4k/Black Hole.PAL.prg
+"Black Hole  NTSC"	vic20/roms/4k/Black Hole.NTSC.prg
+"Buck Rogers"		vic20/roms/16k/Buck Rogers-6000.prg
+			vic20/roms/16k/Buck Rogers-a000.prg
+"Bug Crusher"		vic20/roms/4k/Bug Crusher.prg
+# the 4k ROM really starts at 3000 instead of 2000
+"Cannonball Blitz"	vic20/roms/16k/Cannonball Blitz-3000.prg
+			vic20/roms/16k/Cannonball Blitz-a000.prg
+"Capture the Flag"	vic20/roms/8k/Capture the Flag.prg
+"Catch a Snatch"	vic20/roms/8k/Catch a Snatch.prg
+"Cave-In"		vic20/roms/8k/Cave-in.prg
+"Centipede"		vic20/roms/16k/Centipede-2000.prg
+			vic20/roms/16k/Centipede-a000.prg
+"Choplifter"		vic20/roms/8k/Choplifter.prg
+"Cloudburst"		vic20/roms/4k/Cloudburst.prg
+"Clowns"		vic20/roms/8k/Clowns.prg
+"Clowns         \xb1"	vic20/roms/8k/Clowns-paddle.prg
+"CN Superkicks"		vic20/roms/8k/Chuck Norris Superkicks.prg
+"Computer Artist"	vic20/roms/4k/Commodore Artist.prg
+"Computer War"		vic20/roms/8k/Computer War.prg
+"Congo Bongo"		vic20/roms/8k/Congo Bongo.prg
+"Cosmic Cruncher"	vic20/roms/8k/Cosmic Cruncher-fixed.prg
+"Cosmic CruncherT"	vic20/roms/8k/Cosmic Cruncher-trained.prg
+"Cosmic Jailbreak"	vic20/roms/8k/Cosmic Jailbreak.prg
+"Creepy Corridors"	vic20/roms/8k/Creepy Corridors.prg
+"Crater Raider"		vic20/roms/4k/Crater Raider.prg
+"Crossfire    PAL"	vic20/roms/8k/Crossfire.PAL.prg
+"Crossfire   NTSC"	vic20/roms/8k/Crossfire.NTSC.prg
+"Cyclon"		vic20/roms/8k/Cyclon.prg
+"Dancing Bear"		vic20/roms/16k/Dancing Bear-2000.prg
+			vic20/roms/16k/Dancing Bear-a000.prg
+"Deadly Duck"		vic20/roms/8k/Deadly Duck.prg
+"Deadly Skies"		vic20/roms/4k/Deadly Skies.prg
+"Defender"		vic20/roms/16k/Defender-6000.prg
+			vic20/roms/16k/Defender-a000.prg
+"D'Fuse"		vic20/roms/8k/D'Fuse.prg
+"Demon Attack PAL"	vic20/roms/4k/Demon Attack.PAL.prg
+"Demon AttackNTSC"	vic20/roms/4k/Demon Attack.NTSC.prg
+"Dig Dug"		vic20/roms/16k/Dig Dug-2000.prg
+			vic20/roms/16k/Dig Dug-a000.prg
+"Donkey Kong"		vic20/roms/16k/Donkey Kong-2000.prg
+			vic20/roms/16k/Donkey Kong-a000.prg
+"Dot Gobbler"		vic20/roms/4k/Dot Gobbler.prg
+"Dragonfire"		vic20/roms/8k/Dragonfire.prg
+"Droids"		vic20/roms/8k/Droids.prg
+"E.T."			vic20/roms/8k/ET.prg
+"Face Maker"		vic20/roms/8k/Face Maker.prg
+"Fast Eddie"		vic20/roms/8k/Fast Eddie.prg
+"Final Orbit & BB"	vic20/roms/8k/Final Orbit & Bumper Bash.prg
+"Flipper"		vic20/roms/8k/Flipper-1.0.prg
+"Fourth Encounter"	vic20/roms/8k/Fourth Encounter.prg
+"Frantic"		vic20/roms/8k/Frantic.prg
+"Frogger"		vic20/roms/8k/Frogger.prg
+"Fun with Music"	vic20/roms/8k/Fun with Music.prg
+"Galaxian"		vic20/roms/8k/Galaxian.prg
+"Garden Wars"		vic20/roms/8k/Garden Wars.prg
+"Ghost Manors"		vic20/roms/8k/Ghost Manors.prg
+"Gold Fever"		vic20/roms/4k/Gold Fever.prg
+"Gorf"			vic20/roms/8k/Gorf.prg
+"Gridrunner"		vic20/roms/4k/Gridrunner.prg
+"Home Babysitter"	vic20/roms/8k/Home Babysitter.prg
+"IFR (Flight Sim)"	vic20/roms/8k/IFR (Flight Simulator).prg
+"In the Chips"		vic20/roms/16k/In the Chips-6000.prg
+			vic20/roms/16k/In the Chips-a000.prg
+"JawbreakerII PAL"	vic20/roms/8k/Jawbreaker II.PAL.prg
+"JawbreakerIINTSC"	vic20/roms/8k/Jawbreaker II.NTSC.prg
+"Jelly Monsters"	vic20/roms/8k/Jelly Monsters-v2-fixed.prg
+"Jungle Hunt"		vic20/roms/16k/Jungle Hunt-6000.prg
+			vic20/roms/16k/Jungle Hunt-a000.prg
+"Jupiter Lander"	vic20/roms/8k/Jupiter Lander.prg
+"K-Razy AntiksPAL"	vic20/roms/16k/K-Razy Antiks-6000.prg
+			vic20/roms/16k/K-Razy Antiks-a000.prg
+"K-Razy AntikNTSC"	vic20/roms/16k/K-Razy Antiks.NTSC-6000.prg
+			vic20/roms/16k/K-Razy Antiks.NTSC-a000.prg
+"K-Star Patrol"		vic20/roms/16k/K-Star Patrol-6000.prg
+			vic20/roms/16k/K-Star Patrol-a000.prg
+"Kids on Keys"		vic20/roms/8k/Kids on Keys.prg
+"Kindercomp"		vic20/roms/16k/Kindercomp-6000.prg
+			vic20/roms/16k/Kindercomp-a000.prg
+"Lazerzone"		vic20/roms/8k/Lazerzone.prg
+"Lode Runner"		vic20/roms/16k/Lode Runner-6000.prg
+			vic20/roms/16k/Lode Runner-a000.prg
+"Lunar Leeper"		vic20/roms/16k/Lunar Leeper-2000.prg
+			vic20/roms/16k/Lunar Leeper-a000.prg
+"Mastertype"		vic20/roms/16k/Mastertype-6000.prg
+			vic20/roms/16k/Mastertype-a000.prg
+"Maze"			vic20/roms/8k/Maze.prg
+"Medieval Joust"	vic20/roms/8k/Medieval Joust.prg
+"Menagerie"		vic20/roms/8k/Menagerie.prg
+"Meteor Run"		vic20/roms/8k/Meteor Run.prg
+"Mine Madness"		vic20/roms/8k/Mine Madness.prg
+"Miner 2049'er"		vic20/roms/8k/Miner 2049'er.prg
+"Mole Attack"		vic20/roms/8k/Mole Attack.prg
+"Money Wars"		vic20/roms/8k/Money Wars.prg
+"Monster Maze"		vic20/roms/8k/Monster Maze.prg
+"Moon Patrol"		vic20/roms/16k/Moon Patrol-6000.prg
+			vic20/roms/16k/Moon Patrol-a000.prg
+"Mosquito Infest."	vic20/roms/4k/Mosquito Infestation.prg
+"Motocross Racer"	vic20/roms/8k/Motocross Racer.prg
+"Mountain King"		vic20/roms/16k/Mountain King-6000.prg
+			vic20/roms/16k/Mountain King-a000.prg
+"Ms. Pac-Man"		vic20/roms/16k/Ms. Pac-Man-6000.prg
+			vic20/roms/16k/Ms. Pac-Man-a000.prg
+"Music Composer"	vic20/roms/8k/Vic Music Composer.prg
+"Mutant Herd"		vic20/roms/8k/Mutant Herd.prg
+"Number Crunch"		vic20/roms/8k/Number Crunch.prg
+"Number Nabber&SG"	vic20/roms/8k/Number Nabber & Shape Grabber.prg
+"Omega Race"		vic20/roms/8k/Omega Race.prg
+"Omega Race     T"	vic20/roms/8k/Omega Race-trained.prg
+"Outworld"		vic20/roms/8k/Outworld.prg
+"Pac-Man"		vic20/roms/8k/Pac-Man.prg
+"Paratrooper"		vic20/roms/8k/Paratrooper.prg
+"Pharaoh's Curse"	vic20/roms/16k/Pharaoh's Curse-6000.prg
+			vic20/roms/16k/Pharaoh's Curse-a000.prg
+"Pinball"		vic20/roms/16k/Pinball-6000.prg
+			vic20/roms/16k/Pinball-a000.prg
+"Pinball II"		vic20/roms/16k/Pinball-2-6000.prg
+			vic20/roms/16k/Pinball-2-a000.prg
+"Pipes"			vic20/roms/8k/Pipes.prg
+"Poker"			vic20/roms/8k/Poker-2.prg
+"Polaris"		vic20/roms/8k/Polaris.prg
+"Pole Position"		vic20/roms/16k/Pole Position-6000.prg
+			vic20/roms/16k/Pole Position-a000.prg
+"Predator"		vic20/roms/8k/Predator.prg
+"Princess & Frog"	vic20/roms/8k/Princess and Frog.prg
+"Protector"		vic20/roms/8k/Protector.prg
+"Q-Bert"		vic20/roms/8k/Q-Bert.prg
+"Quackers"		vic20/roms/8k/Quackers.prg
+"Radar Rat Race"	vic20/roms/8k/Radar Rat Race.prg
+"was Car Race"		vic20/roms/8k/Car Race.prg
+"was Rally-X"  		vic20/roms/8k/Rally-X.prg
+"Raid on Fort Kn."	vic20/roms/8k/Raid on Fort Knox.prg
+"Rat Hotel"		vic20/roms/8k/Rat Hotel.prg
+"Renaissance"		vic20/roms/8k/Renaissance.prg
+"River Rescue"		vic20/roms/8k/River Rescue.prg
+"Road Race"		vic20/roms/8k/Road Race.prg
+"Robin Hood"		vic20/roms/8k/Robin Hood.prg
+"Robot Panic"		vic20/roms/8k/Robot Panic.prg
+"Robotron"		vic20/roms/16k/Robotron-6000.prg
+			vic20/roms/16k/Robotron-a000.prg
+"Sargon II Chess"	vic20/roms/8k/Sargon II Chess.prg
+"Satellite Patrol"	vic20/roms/4k/Satellite Patrol.prg
+"Satell&MeteorPAL"	vic20/roms/8k/Satellites and Meteorites.PAL.prg
+"Satell&MeteoNTSC"	vic20/roms/8k/Satellites and Meteorites-6000.prg
+			vic20/roms/8k/Satellites and Meteorites-a000.prg
+"Scorpion"		vic20/roms/8k/Scorpion.prg
+"Scramble"		vic20/roms/4k/Scram20.prg
+"Sea Wolf"		vic20/roms/8k/Sea Wolf.prg
+"Seafox"		vic20/roms/16k/Seafox-6000.prg
+			vic20/roms/16k/Seafox-a000.prg
+"Serpentine   PAL"	vic20/roms/8k/Serpentine.PAL.prg
+"Serpentine  NTSC"	vic20/roms/8k/Serpentine.NTSC.prg
+"Shamus"		vic20/roms/8k/Shamus.prg
+"Sir Lancelot"		vic20/roms/8k/Sir Lancelot.prg
+"Skibbereen   PAL"	vic20/roms/4k/Skibbereen.PAL.prg
+"Skibbereen  NTSC"	vic20/roms/4k/Skibbereen.NTSC.prg
+"Skyblazer"		vic20/roms/16k/Skyblazer-6000.prg
+			vic20/roms/16k/Skyblazer-a000.prg
+"Sky Is Falling \xb1"	vic20/roms/8k/The Sky is Falling.prg
+"Snake Byte"		vic20/roms/4k/Snake Byte.prg
+"Solar System"		vic20/roms/8k/Solar System.prg
+"Space Snake"		vic20/roms/8k/Space Snake.prg
+"Space Ric-O-Shay"	vic20/roms/4k/Space Ric-O-Shay.prg
+"Speed-Bingo Math"	vic20/roms/8k/Speed Math & Bingo Math.prg
+"Spiders of Mars"	vic20/roms/8k/Spiders of Mars.prg
+"Spider City NTSC"	vic20/roms/4k/Spider City.NTSC.prg
+"Spike's Peak"		vic20/roms/8k/Spike's Peak.prg
+"Spills and Fills"	vic20/roms/8k/Spills and Fills.prg
+"Springer"		vic20/roms/16k/Springer-6000.prg
+			vic20/roms/16k/Springer-a000.prg
+"Squishem    NTSC"	vic20/roms/16k/Squishem-6000.prg
+			vic20/roms/16k/Squishem-a000.prg
+"Star Battle"		vic20/roms/8k/Star Battle.prg
+"Star Post"		vic20/roms/8k/Star Post.prg
+"Star Trek-S.O.S."	vic20/roms/8k/Star Trek - S.O.S.prg
+"Story Machine"		vic20/roms/16k/Story Machine-6000.prg
+			vic20/roms/16k/Story Machine-a000.prg
+"Sub Chase"		vic20/roms/4k/Sub Chase.prg
+"Sub Commander"		vic20/roms/16k/Submarine Commander-6000.prg
+			vic20/roms/16k/Submarine Commander-a000.prg
+"Super Amok"		vic20/roms/8k/Super Amok.prg
+"Super Lander"		vic20/roms/8k/Vic Super Lander.prg
+"Super Slot"		vic20/roms/8k/Super Slot.prg
+"Super Smash    \xb1"	vic20/roms/8k/Super Smash-2.prg
+"Tank Atak"		vic20/roms/8k/Tank Atak.prg
+"Tank Wars"		vic20/roms/4k/Tank Wars.prg
+"Terraguard"		vic20/roms/4k/Terraguard.prg
+"Thresold"		vic20/roms/8k/Threshold.prg
+"Titan"			vic20/roms/8k/Titan.prg
+"Tomarc Barbarian"	vic20/roms/8k/Tomarc the Barbarian.prg
+"Tooth Invaders"	vic20/roms/8k/Tooth Invaders.prg
+"Topper      NTSC"	vic20/roms/8k/Topper.NTSC.prg
+"Trashman"		vic20/roms/8k/Trashman.prg
+"Turmoil"		vic20/roms/8k/Turmoil.prg
+"Tutankhamon"		vic20/roms/8k/Tutankham.prg
+"Type Attack"		vic20/roms/8k/Type Attack.prg
+"Typo"			vic20/roms/8k/Typo.prg
+"Video Vermin"		vic20/roms/8k/Video Vermin.prg
+"Videomania"		vic20/roms/4k/Videomania.prg
+"Vis. Solar Syst."	vic20/roms/8k/Visible Solar System.prg
+#the image exceeds beyond $c000
+#"WackyWaitrs48896"	vic20/roms/8k/Wacky Waiters-sys48896.prg
+)
+(
+*games
+"_"/root.games
+*games.ref.16k
+"16k"/games.16k
+*games.ref.8k
+"8k"/games.8k
+*games.ref.3k
+"3k"/games.3k
+*games.ref.0k
+"0k"/games.0k
+*games.basic.ref.16k
+"16k      (BASIC)"/games.basic.16k
+*games.basic.ref.8k
+"8k       (BASIC)"/games.basic.8k
+*games.basic.ref.3k
+"3k       (BASIC)"/games.basic.3k
+*games.basic.ref.0k
+"0k       (BASIC)"/games.basic.0k
+*games.ref.adventure
+"adventure"/games.adventure
+)
+(
+*games.16k
+"_"/games.ref.16k
+"Bongo"			vic20/games/16k/Bongo.prg
+"Death Zone"		vic20/games/16k/Death Zone.prg
+"Fire Galaxy"		vic20/games/16k/Fire Galaxy.prg
+"Fourth Encounter"	vic20/games/16k/Fourth Encounter.prg
+"Galactic Abdctrs"	vic20/games/16k/Galactic Abductors.prg
+"Gunslinger"		vic20/games/16k/Gunslinger.prg
+"Krazy Kong"		vic20/games/16k/Krazy Kong.prg
+"Outworld"		vic20/games/16k/Outworld.prg
+"Perils of Willy"	vic20/games/16k/Perils of Willy.prg
+"Platform Game"		vic20/games/16k/Platform Game.prg
+"Seawolfe"		vic20/games/16k/Seawolfe.prg
+"Skramble"		vic20/games/16k/Skramble.prg
+"Star Defence"		vic20/games/16k/Star Defence.prg
+"Submarine Commander"	vic20/games/16k/Submarine Commander.prg
+"Tom"	   		vic20/games/16k/Tom.prg
+"Vic Chess"		vic20/games/16k/Vic Chess.prg
+"Xeno II"		vic20/games/16k/Xeno II.prg
+)
+(
+*games.8k
+"_"/games.ref.8k
+"3-deep Space"		vic20/games/8k/3-deep Space.prg
+"Andes Attack"		vic20/games/8k/Andes Attack.prg
+"Bonzo"			vic20/games/8k/Bonzo.prg
+"Bonzo1"		vic20/games/8k/Bonzo1.prg
+"Bonzo2"		vic20/games/8k/Bonzo2.prg
+"Boss Chess 1.1"	vic20/games/8k/Boss Chess 1.1.prg
+"Chariot Race"		vic20/games/8k/Chariot Race.prg
+"Computer War"		vic20/games/8k/Computer War.prg
+"Cosmic Firebirds"	vic20/games/8k/Cosmic Firebirds.prg
+"Country Garden"	vic20/games/8k/Country Garden.prg
+"Crazy Thief"		vic20/games/8k/Crazy Thief.prg
+"Critters"		vic20/games/8k/Critters.prg
+#"Cyclons.b"		vic20/games/8k/Cyclons.b.prg
+#"Cyclons.f"		vic20/games/8k/Cyclons.f.prg
+"Deathrace"		vic20/games/8k/Deathrace.prg
+"Defenda"		vic20/games/8k/Defenda.prg
+"Donkey Kong"		vic20/games/8k/Donkey Kong.prg
+"Flowers of Evil"	vic20/games/8k/Flowers of Evil.prg
+"Grandmaster"		vic20/games/8k/Grandmaster.prg
+"Hellgate"		vic20/games/8k/Hellgate.prg
+"Jetpac"		vic20/games/8k/Jetpac.prg
+"Kaktus"		vic20/games/8k/Kaktus.prg
+"Kosmic Kamikaze"	vic20/games/8k/Kosmic Kamikaze.prg
+"Lazerzone"		vic20/games/8k/Lazerzone.prg
+"Matrix"		vic20/games/8k/Matrix.prg
+"Meteor Run"		vic20/games/8k/Meteor Run.prg
+"Mobile Attack"		vic20/games/8k/Mobile Attack.prg
+"Moon Patrol"		vic20/games/8k/Moon Patrol.prg
+"Moons of Jupiter"	vic20/games/8k/Moons of Jupiter.prg
+"Mower Mania"		vic20/games/8k/Mower Mania.prg
+"Myriad"		vic20/games/8k/Myriad.prg
+"Othello II"		vic20/games/8k/Othello II.prg
+"Pool"	 		vic20/games/8k/Pool.prg
+"Potholes VIII"		vic20/games/8k/Potholes VIII.prg
+"Psycho Shopper"	vic20/games/8k/Psycho Shopper.prg
+"Psycho Shop(pic)"	vic20/games/8k/Psycho Shopper-pic.prg
+"Q-warrior"		vic20/games/8k/Q-warrior.prg
+"River Rescue"		vic20/games/8k/River Rescue.prg
+"Sidewinder"		vic20/games/8k/Sidewinder.prg
+"Skyhawk"		vic20/games/8k/Skyhawk.prg
+"Sub Chase"		vic20/games/8k/Sub Chase.prg
+"Tank Commander"	vic20/games/8k/Tank Commander.prg
+"The Pit"		vic20/games/8k/The Pit.prg
+"Time Destroyers"	vic20/games/8k/Time Destroyers.prg
+"Tower of Evil"		vic20/games/8k/Tower of Evil.prg
+"Traxx"			vic20/games/8k/Traxx.prg
+"Tron"			vic20/games/8k/Tron.prg
+"Vicherman"		vic20/games/8k/Vicherman.prg
+)
+(
+*games.3k
+"_"/games.ref.3k
+"Arcadia"		vic20/games/3k/Arcadia.prg
+"Luftkampf"		vic20/games/3k/Luftkampf.prg
+)
+(
+*games.0k
+"_"/games.ref.0k
+"3D Silicon Fish"	vic20/games/unexpanded/3D Silicon Fish.prg
+"4 op een rij"		vic20/games/unexpanded/4 op een rij.prg
+"Abductor"		vic20/games/unexpanded/Abductor.prg
+"Abductor   (pic)"	vic20/games/unexpanded/Abductor-pic.prg
+#"Alien Armada.b"	vic20/games/unexpanded/Alien Armada.b.prg
+#"Alien Armada.f"	vic20/games/unexpanded/Alien Armada.f.prg
+"Alien Attack"		vic20/games/unexpanded/Alien Attack.prg
+"Alien Blitz NTSC"	vic20/games/unexpanded/Alien Blitz.NTSC.prg
+"Alien Blitz  PAL"	vic20/games/unexpanded/Alien Blitz.PAL.prg
+"Alien BlitzBWPAL"	vic20/games/unexpanded/Alien Blitz2.PAL.prg
+"Alien Soccer"		vic20/games/unexpanded/Alien Soccer.prg
+"Alien Vortex"		vic20/games/unexpanded/Alien Vortex.prg
+"Alien Vortx(pic)"	vic20/games/unexpanded/Alien Vortex-pic.prg
+"Alpha Blaster"		vic20/games/unexpanded/Alpha Blaster.prg
+"Alphoids"		vic20/games/unexpanded/Alphoids.prg
+"Amok"			vic20/games/unexpanded/Amok.prg
+"Annihilator"		vic20/games/unexpanded/Annihilator.prg
+"Another Vic/Wall"	vic20/games/unexpanded/Another Vic in the Wall.prg
+"Antimatter Splatter"	vic20/games/unexpanded/Antimatter Splatter.prg
+"Arcadia"		vic20/games/unexpanded/Arcadia.prg
+"Arcadia    (pic)"	vic20/games/unexpanded/Arcadia-pic.prg
+"Astro Panic"		vic20/games/unexpanded/Astro Panic.prg
+"Bagdad"		vic20/games/unexpanded/Bagdad.prg
+"Bagdad     (doc)"	vic20/games/unexpanded/Bagdad-doc.prg
+"Battlefield"		vic20/games/unexpanded/Battlefield.prg
+"Bewitched"		vic20/games/unexpanded/Bewitched.prg
+"Blockbuster"		vic20/games/unexpanded/Blockbuster.prg
+"Blockbuster(pic)"	vic20/games/unexpanded/Blockbuster-pic.prg
+"Blondell"		vic20/games/unexpanded/Blondell.prg
+"Bomber"		vic20/games/unexpanded/Bomber.prg
+"Bounce Out"		vic20/games/unexpanded/Bounce Out.prg
+"Catcha Troopa"		vic20/games/unexpanded/Catcha Troopa.prg
+"Catcha Trpa(doc)"	vic20/games/unexpanded/Catcha Troopa-doc.prg
+"Caterpilla"		vic20/games/unexpanded/Caterpilla.prg
+"Cavern Raider"		vic20/games/unexpanded/Cavern Raider.prg
+"Chomper Man"		vic20/games/unexpanded/Chomper Man.prg
+"Chomper"		vic20/games/unexpanded/Chomper.prg
+"Cosmonaut"		vic20/games/unexpanded/Cosmonaut.prg
+"Crawler"		vic20/games/unexpanded/Crawler.prg
+"Crazey Cavey"		vic20/games/unexpanded/Crazey Cavey.prg
+"Crazey Cavy(pic)"	vic20/games/unexpanded/Crazey Cavey-pic.prg
+"Crazy Kong"		vic20/games/unexpanded/Crazy Kong.prg
+"Demons of Osiris"	vic20/games/unexpanded/Demons of Osiris.prg
+"Destroyer"		vic20/games/unexpanded/Destroyer.prg
+"Digger"		vic20/games/unexpanded/Digger.prg
+"Doodle Bug"		vic20/games/unexpanded/Doodle Bug.prg
+"Duck Shoot"		vic20/games/unexpanded/Duck Shoot.prg
+"Exterminator"		vic20/games/unexpanded/Exterminator.prg
+"Fantasia"		vic20/games/unexpanded/Fantasia.prg
+"Fantazia"		vic20/games/unexpanded/Fantazia.prg
+"Flipper 1.0"		vic20/games/unexpanded/Flipper-1.0.prg
+"Flipper 1.0(pic)"	vic20/games/unexpanded/Flipper-1.0-pic.prg
+"Frantic"		vic20/games/unexpanded/Frantic.prg
+"Froggee"		vic20/games/unexpanded/Froggee.prg
+"Froggie"		vic20/games/unexpanded/Froggie.prg
+"Galactic Blitz"	vic20/games/unexpanded/Galactic Blitz.prg
+"Galactic Xfire"	vic20/games/unexpanded/Galactic Crossfire.prg
+"Galaxzions"		vic20/games/unexpanded/Galaxzions.prg
+"Galaxzions (pic)"	vic20/games/unexpanded/Galaxzions-pic.prg
+"Game of Life"		vic20/games/unexpanded/Game of Life.prg
+"Gridder"		vic20/games/unexpanded/Gridder.prg
+"Gridrunner"		vic20/games/unexpanded/Gridrunner.prg
+"Guardian"		vic20/games/unexpanded/Guardian.prg
+"Gunfight"		vic20/games/unexpanded/Gunfight.prg
+"Hopper"		vic20/games/unexpanded/Hopper.prg
+"Jackpot"		vic20/games/unexpanded/Jackpot.prg
+"Jupiter Defender"	vic20/games/unexpanded/Jupiter Defender.prg
+"Kongo Kong"		vic20/games/unexpanded/Kongo Kong.prg
+"Krell"			vic20/games/unexpanded/Krell.prg
+"L's Lemon Lasers"	vic20/games/unexpanded/Ludwig's Lemon Lasers.prg
+"Mangrove Root"		vic20/games/unexpanded/Mangrove Root.prg
+"Martian Raider 2"	vic20/games/unexpanded/Martian Raider 2.prg
+"Martian Raider"	vic20/games/unexpanded/Martian Raider.prg
+"Max"	 		vic20/games/unexpanded/Max.prg
+"Metagalactic Llamas"	vic20/games/unexpanded/Metagalactic Llamas.prg
+"Metamorphosis"		vic20/games/unexpanded/Metamorphosis.prg
+"Meteor Blaster"	vic20/games/unexpanded/Meteor Blaster.prg
+"Meteors"		vic20/games/unexpanded/Meteors.prg
+"Motor Mouse"		vic20/games/unexpanded/Motor Mouse.prg
+"Multitron"		vic20/games/unexpanded/Multitron.prg
+"Munchman"		vic20/games/unexpanded/Munchman.prg
+"Neutron Zapper"	vic20/games/unexpanded/Neutron Zapper.prg
+"Night Crawler"		vic20/games/unexpanded/Night Crawler.prg
+"Orbis"			vic20/games/unexpanded/Orbis.prg
+"Pakacuda"		vic20/games/unexpanded/Pakacuda.prg
+"Paratrooper"		vic20/games/unexpanded/Paratrooper.prg
+"Paratrooper(doc)"	vic20/games/unexpanded/Paratrooper-inst.prg
+"Pit"			vic20/games/unexpanded/Pit.prg
+"Pollywog"		vic20/games/unexpanded/Pollywog.prg
+"Punch"			vic20/games/unexpanded/Punch.prg
+"Race Fun"		vic20/games/unexpanded/Race Fun.prg
+"Richthofen"		vic20/games/unexpanded/Richthofen.prg
+"Road Racer"		vic20/games/unexpanded/Road Racer.prg
+"Road Toad"		vic20/games/unexpanded/Road Toad.prg
+"Scram20"		vic20/games/unexpanded/Scram20.prg
+"Scram20    (pic)"	vic20/games/unexpanded/Scram20-pic.prg
+"Sea Hunt"		vic20/games/unexpanded/Sea Hunt.prg
+"Sea Invasion"		vic20/games/unexpanded/Sea Invasion.prg
+"Sea Invasio(pic)"	vic20/games/unexpanded/Sea Invasion-pic.prg
+"Shadowfax"		vic20/games/unexpanded/Shadowfax.prg
+"Shadowfax  (pic)"	vic20/games/unexpanded/Shadowfax-pic.prg
+"Shadow Fox"		vic20/games/unexpanded/Shadow Fox.prg
+"Shark Attack"		vic20/games/unexpanded/Shark Attack.prg
+"Shark Attac(pic)"	vic20/games/unexpanded/Shark Attack-pic.prg
+"Siege"			vic20/games/unexpanded/Siege.prg
+"Skramble"		vic20/games/unexpanded/Skramble.prg
+"Slap Dab"		vic20/games/unexpanded/Slap Dab.prg
+"Slap Dab   (pic)"	vic20/games/unexpanded/Slap Dab-pic.prg
+"Slicker Puzzle"	vic20/games/unexpanded/The Slicker Puzzle.prg
+"Snake Bite"		vic20/games/unexpanded/Snake Bite.prg
+"Snake Pit"		vic20/games/unexpanded/Snake Pit.prg
+"Space Attack"		vic20/games/unexpanded/Space Attack.prg
+"Space Attac(pic)"	vic20/games/unexpanded/Space Attack-pic.prg
+"Space Fighter"		vic20/games/unexpanded/Space Fighter.prg
+"Space Invaders"	vic20/games/unexpanded/Space Invaders.prg
+"Space Phreaks"		vic20/games/unexpanded/Space Phreaks.prg
+"Space Phrea(pic)"	vic20/games/unexpanded/Space Phreaks-pic.prg
+"Supavaders"		vic20/games/unexpanded/Supavaders.prg
+"Supavaders (pic)"	vic20/games/unexpanded/Supavaders-pic.prg
+"Super Breakout"	vic20/games/unexpanded/Super Breakout.prg
+"Swarm"			vic20/games/unexpanded/Swarm.prg
+"Swarm      (pic)"	vic20/games/unexpanded/Swarm-pic.prg
+"Tank War"		vic20/games/unexpanded/Tank War.prg
+"TerminalInvaders"	vic20/games/unexpanded/Terminal Invaders.prg
+"The Catch"		vic20/games/unexpanded/The Catch.prg
+"The Defenders"		vic20/games/unexpanded/The Defenders.prg
+"Thunder Flash"		vic20/games/unexpanded/Thunder Flash.prg
+"Thunder Fl (pic)"	vic20/games/unexpanded/Thunder Flash-pic.prg
+"Trench Fire"		vic20/games/unexpanded/Trench Fire.prg
+"Vic-Man"		vic20/games/unexpanded/Vic-Man.prg
+"Vicmen"		vic20/games/unexpanded/Vicmen.prg
+"Vic Panic"		vic20/games/unexpanded/Vic Panic.prg
+"Vic Scramble"		vic20/games/unexpanded/Vic Scramble.prg
+"Wacky Waiters"		vic20/games/unexpanded/Wacky Waiters.prg
+)
+(
+*games.basic.16k
+"_"/games.basic.ref.16k
+"CrushCrumb&Chomp"	vic20/games.basic/16k/Crush Crumble and Chomp.prg
+"Flight Path 737"	vic20/games.basic/16k/Flightpath-737.prg
+"Football Manager"	vic20/games.basic/16k/Football Manager.prg
+"Monopoly"		vic20/games.basic/16k/Monopoly.prg
+"Odyssee 2000"		vic20/games.basic/16k/Odyssee 2000.prg
+"Rescue at Rigel"	vic20/games.basic/16k/Rescue at Rigel.prg
+"Star Quest"		vic20/games.basic/16k/Star Quest.prg
+"Star Trek"		vic20/games.basic/16k/Star Trek.prg
+"Submarine"		vic20/games.basic/16k/Submarine.prg
+"Subspace Striker"	vic20/games.basic/16k/Subspace Striker.prg
+"Thriller"		vic20/games.basic/16k/Thriller.prg
+"Toptrainer"		vic20/games.basic/16k/Toptrainer.prg
+"Trivia Hangman"	vic20/games.basic/16k/Trivia Hangman-game.prg
+"Trivia Hang(doc)"	vic20/games.basic/16k/Trivia Hangman-doc.prg
+"Zor"			vic20/games.basic/16k/Zor.prg
+)
+(
+*games.basic.8k
+"_"/games.basic.ref.8k
+"3D Labyrinth"		vic20/games.basic/8k/3D Labyrinth.prg
+"4 op een rij"		vic20/games.basic/8k/4 op een rij.prg
+"Adventure"		vic20/games.basic/8k/Adventure.prg
+"Alien Demon"		vic20/games.basic/8k/Alien Demon.prg
+"Alien Demon(pic)"	vic20/games.basic/8k/Alien Demon-pic.prg
+"Alien Plague"		vic20/games.basic/8k/Alien Plague.prg
+#"Balloon Blitz.b"	vic20/games.basic/8k/Balloon Blitz.b.prg
+#"Balloon Blitz.f"	vic20/games.basic/8k/Balloon Blitz.f.prg
+#"Cabby.b"		vic20/games.basic/8k/Cabby.b.prg
+#"Cabby.f"		vic20/games.basic/8k/Cabby.f.prg
+"Car Crash"		vic20/games.basic/8k/Car Crash.prg
+#"Cavern Runner 1"	vic20/games.basic/8k/Cavern Runner 1.prg
+#"Cavern Runner 2"	vic20/games.basic/8k/Cavern Runner 2.prg
+#"Chess 1.0-b"		vic20/games.basic/8k/Chess 1.0-b.prg
+#"Chess 1.0-f"		vic20/games.basic/8k/Chess 1.0-f.prg
+#"China Clan-2"		vic20/games.basic/8k/China Clan-2.prg
+"China Clan"		vic20/games.basic/8k/China Clan.prg
+"Crazy Eights"		vic20/games.basic/8k/Crazy Eights.prg
+#"Crazy Kong1"		vic20/games.basic/8k/Crazy Kong1.prg
+#"Crazy Kong2"		vic20/games.basic/8k/Crazy Kong2.prg
+#"Crazy Kong.b"		vic20/games.basic/8k/Crazy Kong.b.prg
+#"Crazy Kong.f"		vic20/games.basic/8k/Crazy Kong.f.prg
+"Death Serpent"		vic20/games.basic/8k/Death Serpent.prg
+"Football Manager"	vic20/games.basic/8k/Football Manager.prg
+"Frank"			vic20/games.basic/8k/Frank.prg
+"Galaxy.1"		vic20/games.basic/8k/Galaxy.1.prg
+"Gator Beach"		vic20/games.basic/8k/Gator Beach.prg
+"Golf"			vic20/games.basic/8k/Golf.prg
+"Hangman"		vic20/games.basic/8k/Hangman.prg
+"K&K"			vic20/games.basic/8k/K&K.prg
+#"Ladders1"		vic20/games.basic/8k/Ladders1.prg
+#"Ladders2"		vic20/games.basic/8k/Ladders2.prg
+"Laivanupotus"		vic20/games.basic/8k/Laivanupotus.prg
+"Laser Barrage"		vic20/games.basic/8k/Laser Barrage.prg
+"Maze"			vic20/games.basic/8k/Maze.prg
+"Olympiad"		vic20/games.basic/8k/Olympiad.prg
+"Oper. Ganymed"		vic20/games.basic/8k/Oper. Ganymed.prg
+"Pests"			vic20/games.basic/8k/Pests.prg
+"Rat Man"		vic20/games.basic/8k/Rat Man.prg
+"Rox III"		vic20/games.basic/8k/Rox III.prg
+"Samsara"		vic20/games.basic/8k/Samsara.prg
+"Simpelpac"		vic20/games.basic/8k/Simpelpac.prg
+"Skymath"		vic20/games.basic/8k/Skymath.prg
+"Space Math"		vic20/games.basic/8k/Space Math.prg
+"Star Trek"		vic20/games.basic/8k/Star Trek.prg
+"Super Frog"		vic20/games.basic/8k/Super Frog.prg
+"Tankslag"		vic20/games.basic/8k/Tankslag.prg
+"Tik Tak Tor"		vic20/games.basic/8k/Tik Tak Tor.prg
+"Treasure Hunt"		vic20/games.basic/8k/Treasure Hunt.prg
+"Twonkie"		vic20/games.basic/8k/Twonkie.prg
+"Ultimate Tank"		vic20/games.basic/8k/Ultimate Tank.prg
+"Wallet Walker"		vic20/games.basic/8k/Wallet Walker.prg
+"Word Find.ex"		vic20/games.basic/8k/Word Find.ex.prg
+"Word Hunt"		vic20/games.basic/8k/Word Hunt.prg
+"Worm of Bemer"		vic20/games.basic/8k/Worm of Bemer.prg
+"Wumpus"		vic20/games.basic/8k/Wumpus.prg
+"Zig Zago"		vic20/games.basic/8k/Zig Zago.prg
+)
+(
+*games.basic.3k
+"_"/games.basic.ref.3k
+"3D Doolhof"		vic20/games.basic/3k/3D Doolhof.prg
+"3D Tic Tac Toe"	vic20/games.basic/3k/3D Tic Tac Toe.prg
+"3D Tic-Tac-Toe"	vic20/games.basic/3k/3D Tic-Tac-Toe.prg
+"Alien Plague"		vic20/games.basic/3k/Alien Plague.prg
+#"Auto-Simulator-1"	vic20/games.basic/3k/Auto-Simulator-1.prg
+#"Auto-Simulator-2"	vic20/games.basic/3k/Auto-Simulator-2.prg
+#"Auto-Simulator"	vic20/games.basic/3k/Auto-Simulator.prg
+"Avaruuspeli"		vic20/games.basic/3k/Avaruuspeli.prg
+"Biorhythmus"		vic20/games.basic/3k/Biorhythmus.prg
+"Bomber"		vic20/games.basic/3k/Bomber.prg
+"Catacombs"		vic20/games.basic/3k/Catacombs.prg
+"Caves of Ice"		vic20/games.basic/3k/Caves of Ice.prg
+"Cremlin"		vic20/games.basic/3k/Cremlin.prg
+"Domino"		vic20/games.basic/3k/Domino.prg
+"Droids"		vic20/games.basic/3k/Droids.prg
+"Duikboten"		vic20/games.basic/3k/Duikboten.prg
+"Flightsimulator"	vic20/games.basic/3k/Flightsimulator.prg
+"Frog"			vic20/games.basic/3k/Frog.prg
+"Geluiden"		vic20/games.basic/3k/Geluiden.prg
+"Gobang"		vic20/games.basic/3k/Gobang.prg
+"Hebbes"		vic20/games.basic/3k/Hebbes.prg
+"Insluit Spel"		vic20/games.basic/3k/Insluit Spel.prg
+"Kanonen"		vic20/games.basic/3k/Kanonen.prg
+"Lighthouse"		vic20/games.basic/3k/Lighthouse.prg
+"Mastermind"		vic20/games.basic/3k/Mastermind.prg
+"Owerri"		vic20/games.basic/3k/Owerri.prg
+"Quatrainment"		vic20/games.basic/3k/Quatrainment.prg
+"Rail"			vic20/games.basic/3k/Rail.prg
+"Road Rally"		vic20/games.basic/3k/Road Rally.prg
+"Safe"			vic20/games.basic/3k/Safe.prg
+#"Slang2"		vic20/games.basic/3k/Slang2.prg
+#"Slang"		vic20/games.basic/3k/Slang.prg
+"Space Division"	vic20/games.basic/3k/Space Division.prg
+"Therapy"		vic20/games.basic/3k/Therapy.prg
+"Wakken&Ijsbeeren"	vic20/games.basic/3k/Wakken&Ijsbeeren.prg
+"Yahtzee"		vic20/games.basic/3k/Yahtzee.prg
+"Zeeslag 2 Vic's"	vic20/games.basic/3k/Zeeslag 2 Vic's.prg
+"Zeeslag"		vic20/games.basic/3k/Zeeslag.prg
+)
+(
+*games.basic.0k
+"_"/games.basic.ref.0k
+"17+4"			vic20/games.basic/unexpanded/17+4.prg
+"3D Maze"		vic20/games.basic/unexpanded/3D Maze.prg
+"Aardvark"		vic20/games.basic/unexpanded/Aardvark.prg
+"Aavelabyrintti"	vic20/games.basic/unexpanded/Aavelabyrintti.prg
+"Acrobat"		vic20/games.basic/unexpanded/Acrobat.prg
+"Add 'em up"		vic20/games.basic/unexpanded/Add 'em up.prg
+"Airdefence"		vic20/games.basic/unexpanded/Airdefence.prg
+"Airplane"		vic20/games.basic/unexpanded/Airplane.prg
+"Alien Raiders"		vic20/games.basic/unexpanded/Alien Raiders.prg
+"Alien Wars"		vic20/games.basic/unexpanded/Alien Wars.prg
+"Alien Waster"		vic20/games.basic/unexpanded/Alien Waster.prg
+"Amok"			vic20/games.basic/unexpanded/Amok.prg
+"Ampumapeli"		vic20/games.basic/unexpanded/Ampumapeli.prg
+"Anagrams"		vic20/games.basic/unexpanded/Anagrams.prg
+"Another Pacman"	vic20/games.basic/unexpanded/Another Pacman.prg
+"Arrow"	 		vic20/games.basic/unexpanded/Arrow.prg
+"Artillery"		vic20/games.basic/unexpanded/Artillery.prg
+"Asteroids"		vic20/games.basic/unexpanded/Asteroids.prg
+"Astro Fighter"		vic20/games.basic/unexpanded/Astro Fighter.prg
+#"Attack.1"		vic20/games.basic/unexpanded/Attack.1.prg
+#"Attack.2"		vic20/games.basic/unexpanded/Attack.2.prg
+"Autobahn"		vic20/games.basic/unexpanded/Autobahn.prg
+"Auto Race"		vic20/games.basic/unexpanded/Auto Race.prg
+"Auto Rallye"		vic20/games.basic/unexpanded/Auto Rallye.prg
+"Avoid Meteorites"	vic20/games.basic/unexpanded/Avoid Meteorites.prg
+"Baja 1000"		vic20/games.basic/unexpanded/Baja 1000.prg
+"Barricade"		vic20/games.basic/unexpanded/Barricade.prg
+"Barrier Battle"	vic20/games.basic/unexpanded/Barrier Battle.prg
+"Beekeeper"		vic20/games.basic/unexpanded/Beekeeper.prg
+"Bioritme"		vic20/games.basic/unexpanded/Bioritme.prg
+"Bioritmes"		vic20/games.basic/unexpanded/Bioritmes.prg
+"Bioritmiek"		vic20/games.basic/unexpanded/Bioritmiek.prg
+"Bird Hunt"		vic20/games.basic/unexpanded/Bird Hunt.prg
+"Bke"			vic20/games.basic/unexpanded/Bke.prg
+"Blackjack"		vic20/games.basic/unexpanded/Blackjack.prg
+"Blackjack 2"		vic20/games.basic/unexpanded/Blackjack 2.prg
+"Blam!"			vic20/games.basic/unexpanded/Blam!.prg
+"BlueMeanies frOS"	vic20/games.basic/unexpanded/Blue Meanies from Outer Space.prg
+"Bomber"		vic20/games.basic/unexpanded/Bomber.prg
+"Bombing"		vic20/games.basic/unexpanded/Bombing.prg
+"Bommenwerper"		vic20/games.basic/unexpanded/Bommenwerper.prg
+"Bonking Barrels"	vic20/games.basic/unexpanded/Bonking Barrels.prg
+"Bowling Champ"		vic20/games.basic/unexpanded/Bowling Champ.prg
+"Breakaway"		vic20/games.basic/unexpanded/Breakaway.prg
+"Break Out 1"		vic20/games.basic/unexpanded/Break Out 1.prg
+"Break Out 2"		vic20/games.basic/unexpanded/Break Out 2.prg
+"Break Out 3"		vic20/games.basic/unexpanded/Break Out 3.prg
+"Break Out 4"		vic20/games.basic/unexpanded/Break Out 4.prg
+"Bunny Hop"		vic20/games.basic/unexpanded/Bunny Hop.prg
+"Burning Building"	vic20/games.basic/unexpanded/Burning Building.prg
+"Canyon Runner"		vic20/games.basic/unexpanded/Canyon Runner.prg
+"Car Chase"		vic20/games.basic/unexpanded/Car Chase.prg
+"Car Drive"		vic20/games.basic/unexpanded/Car Drive.prg
+"Car Race"		vic20/games.basic/unexpanded/Car Race.prg
+"Castle Dungeon"	vic20/games.basic/unexpanded/D.prg
+"Castle Dung(doc)"	vic20/games.basic/unexpanded/Castle Dungeon.prg
+"CB Slot VIII"		vic20/games.basic/unexpanded/CB Slot VIII.prg
+"CB Slot VI"		vic20/games.basic/unexpanded/CB Slot VI.prg
+"Centipod"		vic20/games.basic/unexpanded/Centipod.prg
+"Checkers 1.0"		vic20/games.basic/unexpanded/Checkers 1.0.prg
+"Checkers 2"		vic20/games.basic/unexpanded/Checkers 2.prg
+"Checkers"		vic20/games.basic/unexpanded/Checkers.prg
+"Chopper"		vic20/games.basic/unexpanded/Chopper.prg
+"Christmas Tree"	vic20/games.basic/unexpanded/Christmas Tree.prg
+"Circus"		vic20/games.basic/unexpanded/Circus.prg
+"Circus     (doc)"	vic20/games.basic/unexpanded/Circus-doc.prg
+"City Bomber"		vic20/games.basic/unexpanded/City Bomber.prg
+#"City Crusher 2"	vic20/games.basic/unexpanded/City Crusher 2.prg
+#"City Crusher"		vic20/games.basic/unexpanded/City Crusher.prg
+"Cobra"			vic20/games.basic/unexpanded/Cobra.prg
+"Code Breaker"		vic20/games.basic/unexpanded/Code Breaker.prg
+"Code Maker"		vic20/games.basic/unexpanded/Code Maker.prg
+#"Colorbot.b"		vic20/games.basic/unexpanded/Colorbot.b.prg
+#"Colorbot.f"		vic20/games.basic/unexpanded/Colorbot.f.prg
+"Componeren"		vic20/games.basic/unexpanded/Componeren.prg
+"Cosmiads"		vic20/games.basic/unexpanded/Cosmiads.prg
+#"Cosmic Combat.b"	vic20/games.basic/unexpanded/Cosmic Combat.b.prg
+#"Cosmic Combat.f"	vic20/games.basic/unexpanded/Cosmic Combat.f.prg
+"Cosmic Crusader"	vic20/games.basic/unexpanded/Cosmic Crusader.prg
+"Craps"			vic20/games.basic/unexpanded/Craps.prg
+#"Crazy Climber.b"	vic20/games.basic/unexpanded/Crazy Climber.b.prg
+#"Crazy Climber.p2"	vic20/games.basic/unexpanded/Crazy Climber.p2.prg
+"Crazy Song"		vic20/games.basic/unexpanded/Crazy Song.prg
+"Critical Mass"		vic20/games.basic/unexpanded/Critical Mass.prg
+"Dam Buster"		vic20/games.basic/unexpanded/Dam Buster.prg
+"Death Maze"		vic20/games.basic/unexpanded/Death Maze.prg
+"Deathtrap"		vic20/games.basic/unexpanded/Deathtrap.prg
+"Defend 'em"		vic20/games.basic/unexpanded/Defend 'em.prg
+"Deflection"		vic20/games.basic/unexpanded/Deflection.prg
+"Deflex"		vic20/games.basic/unexpanded/Deflex.prg
+"Depthcharge"		vic20/games.basic/unexpanded/Depthcharge.prg
+#"Devastator.b"		vic20/games.basic/unexpanded/Devastator.b.prg
+#"Devastator.f"		vic20/games.basic/unexpanded/Devastator.f.prg
+#"Diamond Drop"		vic20/games.basic/unexpanded/Diamond Drop.prg
+#"Diamond Drop.2"	vic20/games.basic/unexpanded/Diamond Drop.2.prg
+"Dodgems"		vic20/games.basic/unexpanded/Dodgems.prg
+"Doolhof"		vic20/games.basic/unexpanded/Doolhof.prg
+"Dots"			vic20/games.basic/unexpanded/Dots.prg
+"Downhill"		vic20/games.basic/unexpanded/Downhill.prg
+#"Dragon Master.b"	vic20/games.basic/unexpanded/Dragon Master.b.prg
+#"Dragon Master.f"	vic20/games.basic/unexpanded/Dragon Master.f.prg
+"Dragon Maze"		vic20/games.basic/unexpanded/Dragon Maze.prg
+"Drag Strip"		vic20/games.basic/unexpanded/Drag Strip.prg
+"Earth Defense"		vic20/games.basic/unexpanded/Earth Defense.prg
+"Earth Invaders"	vic20/games.basic/unexpanded/Earth Invaders.prg
+"Einsiedler"		vic20/games.basic/unexpanded/Einsiedler.prg
+"Elektrisch Hek"	vic20/games.basic/unexpanded/Elektrisch Hek.prg
+"Explorer"		vic20/games.basic/unexpanded/Explorer.prg
+"Fast Add"		vic20/games.basic/unexpanded/Fast Add.prg
+"Fire Fighter II"	vic20/games.basic/unexpanded/Fire Fighter II.prg
+"Fly Snatcher-3.0"	vic20/games.basic/unexpanded/Fly Snatcher-3.0.prg
+"Fly Snatcher-4.0"	vic20/games.basic/unexpanded/Fly Snatcher-4.0.prg
+#"Frantic Fisher.b"	vic20/games.basic/unexpanded/Frantic Fisher.b.prg
+#"Frantic Fisher.f"	vic20/games.basic/unexpanded/Frantic Fisher.f.prg
+"Freeze Factory"	vic20/games.basic/unexpanded/Freeze Factory.prg
+"Frog Chase"		vic20/games.basic/unexpanded/Frog Chase.prg
+"Frogger     ZX;/"	vic20/games.basic/unexpanded/Frogger.prg
+"Froggy"		vic20/games.basic/unexpanded/Froggy.prg
+"Frogrun"		vic20/games.basic/unexpanded/Frogrun.prg
+"Fruitautomaat"		vic20/games.basic/unexpanded/Fruitautomaat.prg
+"Galactica"		vic20/games.basic/unexpanded/Galactica.prg
+"Geh-Panzer"		vic20/games.basic/unexpanded/Geh-Panzer.prg
+#"Geisterschloss.1"	vic20/games.basic/unexpanded/Geisterschloss.1.prg
+#"Geisterschloss.2"	vic20/games.basic/unexpanded/Geisterschloss.2.prg
+"Ghost Attack"		vic20/games.basic/unexpanded/Ghost Attack.prg
+"Ghosthunt"		vic20/games.basic/unexpanded/Ghosthunt.prg
+#"Goblin.orig"		vic20/games.basic/unexpanded/Goblin.orig.prg
+"Goblin"		vic20/games.basic/unexpanded/Goblin.prg
+"Golf"			vic20/games.basic/unexpanded/Golf.prg
+"Goodbye Charlie"	vic20/games.basic/unexpanded/Goodbye Charlie.prg
+"Gotcha"		vic20/games.basic/unexpanded/Gotcha.prg
+"Grand Prix"		vic20/games.basic/unexpanded/Grand Prix.prg
+"Grasmaaier"		vic20/games.basic/unexpanded/Grasmaaier.prg
+"Guess"			vic20/games.basic/unexpanded/Guess.prg
+"Hangman"		vic20/games.basic/unexpanded/Hangman.prg
+"Hangmath"		vic20/games.basic/unexpanded/Hangmath.prg
+"Hanover Downs"		vic20/games.basic/unexpanded/Hanover Downs.prg
+"Hardhat Climber"	vic20/games.basic/unexpanded/Hardhat Climber.prg
+"Helikopter"		vic20/games.basic/unexpanded/Helikopter.prg
+#"Hell Driver-loader"	vic20/games.basic/unexpanded/Hell Driver-loader.prg
+"Hell Driver"		vic20/games.basic/unexpanded/Hell Driver.prg
+"Hoger-Lager"		vic20/games.basic/unexpanded/Hoger-Lager.prg
+"Hopper"		vic20/games.basic/unexpanded/Hopper.prg
+"Huerdenlauf"		vic20/games.basic/unexpanded/Huerdenlauf.prg
+"Hunt"			vic20/games.basic/unexpanded/Hunt 1.prg
+"Hunt       (doc)"	vic20/games.basic/unexpanded/Hunt.prg
+"Icbm Basic V8"		vic20/games.basic/unexpanded/Icbm Basic V8.prg
+"Invade"		vic20/games.basic/unexpanded/Invade.prg
+"Invader Fall"		vic20/games.basic/unexpanded/Invader Fall.prg
+"Invasion ausmAll"	vic20/games.basic/unexpanded/Invasion aus dem All.prg
+"Jackpot"	  	vic20/games.basic/unexpanded/Jackpot.prg
+"Juggler"		vic20/games.basic/unexpanded/Juggler.prg
+#"Jump.b"		vic20/games.basic/unexpanded/Jump.b.prg
+#"Jump.p2"		vic20/games.basic/unexpanded/Jump.p2.prg
+#"Jump.f"		vic20/games.basic/unexpanded/Jump.f.prg
+"Jupiter Defender"	vic20/games.basic/unexpanded/Jupiter Defender.prg
+"Jupiter Lander"	vic20/games.basic/unexpanded/Jupiter Lander.prg
+"Kaartspel"		vic20/games.basic/unexpanded/Kaartspel.prg
+"Kaylon"		vic20/games.basic/unexpanded/Kaylon.prg
+"Kiddie Checkers"	vic20/games.basic/unexpanded/Kiddie Checkers.prg
+"Killer Comet 2"	vic20/games.basic/unexpanded/Killer Comet 2.prg
+"Killer Comet"		vic20/games.basic/unexpanded/Killer Comet.prg
+"Kleurenprobleem"	vic20/games.basic/unexpanded/Kleurenprobleem.prg
+"Krazy Kong"		vic20/games.basic/unexpanded/Krazy Kong.prg
+"Letterpuzzel"		vic20/games.basic/unexpanded/Letterpuzzel.prg
+"Little Kong"		vic20/games.basic/unexpanded/Little Kong.prg
+#"Looper"		vic20/games.basic/unexpanded/Looper.prg
+#"Looper Part 2"	vic20/games.basic/unexpanded/Looper Part 2.prg
+"Lucifer Spel"		vic20/games.basic/unexpanded/Lucifer Spel.prg
+"Lucy Lizard"		vic20/games.basic/unexpanded/Lucy Lizard.prg
+"Lunarcommand"		vic20/games.basic/unexpanded/Lunarcommand.prg
+"Lunar Lander"		vic20/games.basic/unexpanded/Lunar Lander.prg
+"Maanlanding"		vic20/games.basic/unexpanded/Maanlanding.prg
+"Mancala"		vic20/games.basic/unexpanded/Mancala.prg
+"Mancala 2"		vic20/games.basic/unexpanded/Mancala 2.prg
+"Marble Hunt"		vic20/games.basic/unexpanded/Marble Hunt.prg
+"Mastermind"		vic20/games.basic/unexpanded/Mastermind.prg
+"Mastermind 2"		vic20/games.basic/unexpanded/Mastermind 2.prg
+"Math Quiz"		vic20/games.basic/unexpanded/Math Quiz.prg
+"Memory"		vic20/games.basic/unexpanded/Memory.prg
+"Meteor Maze"		vic20/games.basic/unexpanded/Meteor Maze.prg
+"Microzodiac"		vic20/games.basic/unexpanded/Microzodiac.prg
+"Minefield"		vic20/games.basic/unexpanded/Minefield.prg
+"Minenraumkomando"	vic20/games.basic/unexpanded/Minenraumkommando.prg
+"Mini Golf"		vic20/games.basic/unexpanded/Mini Golf.prg
+"Minotaur"		vic20/games.basic/unexpanded/Minotaur.prg
+"Missile Attack"	vic20/games.basic/unexpanded/Missile Attack.prg
+"Missile Panic"		vic20/games.basic/unexpanded/Missile Panic.prg
+"Missing Maze"		vic20/games.basic/unexpanded/Missing Maze.prg
+"Missionarissen"	vic20/games.basic/unexpanded/Missionarissen.prg
+"Moneysnake"		vic20/games.basic/unexpanded/Moneysnake.prg
+"Moonlander"		vic20/games.basic/unexpanded/Moonlander.prg
+"Moonlander 2"		vic20/games.basic/unexpanded/Moonlander 2.prg
+"Morse Code Prog"	vic20/games.basic/unexpanded/Morse Code Prog.prg
+"Mosquito"		vic20/games.basic/unexpanded/Mosquito.prg
+"Mosquito   (doc)"	vic20/games.basic/unexpanded/Mosquito-doc.prg
+"Motorcross"		vic20/games.basic/unexpanded/Motorcross.prg
+"Motorway"		vic20/games.basic/unexpanded/Motorway.prg
+"Mouse Maze"		vic20/games.basic/unexpanded/Mouse Maze.prg
+"Mozart Machine"	vic20/games.basic/unexpanded/Mozart Machine.prg
+"Mukade"		vic20/games.basic/unexpanded/Mukade.prg
+"Muncher"		vic20/games.basic/unexpanded/Muncher.prg
+"Nevets"		vic20/games.basic/unexpanded/Nevets.prg
+"New York Blitz"	vic20/games.basic/unexpanded/New York Blitz.prg
+"New York Bl(pic)"	vic20/games.basic/unexpanded/New York Blitz-pic.prg
+#"Nibblers.1"		vic20/games.basic/unexpanded/Nibblers.1.prg
+#"Nibblers.2"		vic20/games.basic/unexpanded/Nibblers.2.prg
+"Nibblers"		vic20/games.basic/unexpanded/Nibblers.prg
+"Nightdriver"		vic20/games.basic/unexpanded/Nightdriver.prg
+"Obstakel"		vic20/games.basic/unexpanded/Obstakel.prg
+"Oil-panic     Z/"	vic20/games.basic/unexpanded/Oil-panic.prg
+"Old Shurehand"		vic20/games.basic/unexpanded/Old Shurehand.prg
+#"Omnitron.b"		vic20/games.basic/unexpanded/Omnitron.b.prg
+#"Omnitron.f"		vic20/games.basic/unexpanded/Omnitron.f.prg
+"Othello"		vic20/games.basic/unexpanded/Othello.prg
+"Othello 2"		vic20/games.basic/unexpanded/Othello 2.prg
+"Othello 3"		vic20/games.basic/unexpanded/Othello 3.prg
+"Outpost"		vic20/games.basic/unexpanded/Outpost.prg
+"Pelmanism"		vic20/games.basic/unexpanded/Pelmanism.prg
+"Piano 2 QWER1234"	vic20/games.basic/unexpanded/Piano 2.prg
+"Piano"			vic20/games.basic/unexpanded/Piano.prg
+"Pinball"		vic20/games.basic/unexpanded/Pinball.prg
+"Pistolenpaultje"	vic20/games.basic/unexpanded/Pistolenpaultje.prg
+"Poker"			vic20/games.basic/unexpanded/Poker.prg
+"Pool"			vic20/games.basic/unexpanded/Pool.prg
+"Potholes"		vic20/games.basic/unexpanded/Potholes.prg
+"Potholes I"		vic20/games.basic/unexpanded/Potholes I.prg
+"Potholes II"		vic20/games.basic/unexpanded/Potholes II.prg
+"Potholes III"		vic20/games.basic/unexpanded/Potholes III.prg
+"Potholes IV"		vic20/games.basic/unexpanded/Potholes IV.prg
+"Potholes V"		vic20/games.basic/unexpanded/Potholes V.prg
+"Problems"		vic20/games.basic/unexpanded/Problems.prg
+"Puckman"		vic20/games.basic/unexpanded/Puckman.prg
+"Quest"			vic20/games.basic/unexpanded/Quest.prg
+"Quirk"			vic20/games.basic/unexpanded/Quirk.prg
+"Quizard"		vic20/games.basic/unexpanded/Quizard.prg
+"Raadspel"		vic20/games.basic/unexpanded/Raadspel.prg
+"Rabbitblitz"		vic20/games.basic/unexpanded/Rabbitblitz.prg
+#"Rabbit Chaser.b"	vic20/games.basic/unexpanded/Rabbit Chaser.b.prg
+#"Rabbit Chaser.f"	vic20/games.basic/unexpanded/Rabbit Chaser.f.prg
+"Race"	 		vic20/games.basic/unexpanded/Race.prg
+"Racer"			vic20/games.basic/unexpanded/Racer.prg
+"Raiders"		vic20/games.basic/unexpanded/Raiders.prg
+"Raket Kommando"	vic20/games.basic/unexpanded/Raket Kommando.prg
+"Rattenvanger"		vic20/games.basic/unexpanded/Rattenvanger.prg
+"Red Alert"		vic20/games.basic/unexpanded/Red Alert.prg
+#"Rescue.b"		vic20/games.basic/unexpanded/Rescue.b.prg
+#"Rescue.f"		vic20/games.basic/unexpanded/Rescue.f.prg
+"Reversi"		vic20/games.basic/unexpanded/Reversi.prg
+"Rhino"			vic20/games.basic/unexpanded/Rhino.prg
+"Rijtest"		vic20/games.basic/unexpanded/Rijtest.prg
+"Road Driver"		vic20/games.basic/unexpanded/Road Driver.prg
+"Roader"		vic20/games.basic/unexpanded/Roader.prg
+"Rocket Command"	vic20/games.basic/unexpanded/Rocket Command.prg
+"Rocket Command 2"	vic20/games.basic/unexpanded/Rocket Command 2.prg
+"Rotation"		vic20/games.basic/unexpanded/Rotation.prg
+"Rubik's Cube"		vic20/games.basic/unexpanded/Rubik's Cube.prg
+"Rugby"	 		vic20/games.basic/unexpanded/Rugby.prg
+"Ruimtemonsters"	vic20/games.basic/unexpanded/Ruimtemonsters.prg
+"Saucer Shooter"	vic20/games.basic/unexpanded/Saucer Shooter.prg
+"Scare City"		vic20/games.basic/unexpanded/Scare City.prg
+"Schuifspel"		vic20/games.basic/unexpanded/Schuifspel.prg
+"Scrambler"		vic20/games.basic/unexpanded/Scrambler.prg
+#"Shooting Gallery"	vic20/games.basic/unexpanded/Shooting Gallery.prg
+#"Shooting Gal.f"	vic20/games.basic/unexpanded/Shooting Gal.f.prg
+"Shooting Gallery"	vic20/games.basic/unexpanded/SK Shooting Gallery.prg
+#"Shuttle 1"		vic20/games.basic/unexpanded/Shuttle 1.prg
+#"Shuttle 2"		vic20/games.basic/unexpanded/Shuttle 2.prg
+"Simon"	  		vic20/games.basic/unexpanded/Simon.prg
+"Skippingball  NM"	vic20/games.basic/unexpanded/Skippingball.prg
+"Sky Diver"		vic20/games.basic/unexpanded/Sky Diver.prg
+"Smash"			vic20/games.basic/unexpanded/Smash.prg
+"Snake-byte"		vic20/games.basic/unexpanded/Snake-byte.joystick.prg
+"Snake-byte   KBD"	vic20/games.basic/unexpanded/Snake-byte.prg
+"Snake"	      		vic20/games.basic/unexpanded/Snake.prg
+"Snipers     ZX/;"	vic20/games.basic/unexpanded/Snipers.prg
+#"Sno-cat.b"		vic20/games.basic/unexpanded/Sno-cat.b.prg
+#"Sno-cat.f"		vic20/games.basic/unexpanded/Sno-cat.f.prg
+"Sokkelo"		vic20/games.basic/unexpanded/Sokkelo.prg
+"Space Docking"		vic20/games.basic/unexpanded/Space Docking.prg
+"Space Dock"		vic20/games.basic/unexpanded/Space Dock.prg
+"Space Panic"		vic20/games.basic/unexpanded/Space Panic.prg
+#"Space Patrol.b"	vic20/games.basic/unexpanded/Space Patrol.b.prg
+#"Space Patrol.f"	vic20/games.basic/unexpanded/Space Patrol.f.prg
+"Spacerunner"		vic20/games.basic/unexpanded/Spacerunner.prg
+"Space Scramble"	vic20/games.basic/unexpanded/Space Scramble.prg
+"Space Shooter"		vic20/games.basic/unexpanded/Space Shooter.prg
+#"Space Storm"		vic20/games.basic/unexpanded/Space Storm.prg
+#"Space Storm 2"	vic20/games.basic/unexpanded/Space Storm 2.prg
+"Space Travel"		vic20/games.basic/unexpanded/Space Travel.prg
+"Space Zap"		vic20/games.basic/unexpanded/Space Zap.prg
+"Space Zap  (doc)"	vic20/games.basic/unexpanded/Space Zap-Intro.prg
+"Speed Boat"		vic20/games.basic/unexpanded/Speed Boat.prg
+"Speedski"		vic20/games.basic/unexpanded/Speedski.prg
+"Star Chaser"		vic20/games.basic/unexpanded/Star Chaser.prg
+"Star Wars II"		vic20/games.basic/unexpanded/Star Wars II.prg
+"Starwars"		vic20/games.basic/unexpanded/Starwars.prg
+"Star Wars"		vic20/games.basic/unexpanded/Star Wars.prg
+"Stock"			vic20/games.basic/unexpanded/Stock.prg
+"Super Cobra"		vic20/games.basic/unexpanded/Super Cobra.prg
+"Superknight"		vic20/games.basic/unexpanded/Superknight.prg
+#"Super Kong.b"		vic20/games.basic/unexpanded/Super Kong.b.prg
+#"Super Kong.f"		vic20/games.basic/unexpanded/Super Kong.f.prg
+"Super Slither"		vic20/games.basic/unexpanded/Super Slither.prg
+"Swarm"			vic20/games.basic/unexpanded/Swarm.prg
+"Tank Gunner"		vic20/games.basic/unexpanded/Tank Gunner.prg
+"Tank vs Ufo"		vic20/games.basic/unexpanded/Tank vs Ufo.joystick.prg
+"Tank vs Ufo  KBD"	vic20/games.basic/unexpanded/Tank vs Ufo.prg
+"Tank vs Ufo 2"		vic20/games.basic/unexpanded/Tank vs Ufo 2.prg
+"Texasjack"		vic20/games.basic/unexpanded/Texasjack.prg
+"The Tomb"		vic20/games.basic/unexpanded/The Tomb.prg
+"Thinking"		vic20/games.basic/unexpanded/Thinking.prg
+"Thunderbird"		vic20/games.basic/unexpanded/Thunderbird.prg
+"Tic-Tac-Toe"		vic20/games.basic/unexpanded/Tic-Tac-Toe.prg
+"Time Bomb"		vic20/games.basic/unexpanded/Time Bomb.prg
+#"Topografie"		vic20/games.basic/unexpanded/Topografie.prg
+#"Topo2"		vic20/games.basic/unexpanded/Topo2.prg
+#"Topo3"		vic20/games.basic/unexpanded/Topo3.prg
+"Traffic Jam IJKM"	vic20/games.basic/unexpanded/Traffic Jam.prg
+"Tram Line"		vic20/games.basic/unexpanded/Tram Line.prg
+"Trap-man"		vic20/games.basic/unexpanded/Trap-man.prg
+"Trap"			vic20/games.basic/unexpanded/Trap.prg
+"Turtle Races"		vic20/games.basic/unexpanded/Turtle Races.prg
+"Typing"		vic20/games.basic/unexpanded/Typing.prg
+"Typo Invaders"		vic20/games.basic/unexpanded/Typo Invaders.prg
+#"U-boat.b"		vic20/games.basic/unexpanded/U-boat.b.prg
+#"U-boat.f"		vic20/games.basic/unexpanded/U-boat.f.prg
+"Ufo"			vic20/games.basic/unexpanded/Ufo.prg
+"Ufo2     @:;/123"	vic20/games.basic/unexpanded/Ufo2.prg
+"Ultra Breakout"	vic20/games.basic/unexpanded/Ultra Breakout.prg
+"Ven. ruletti"		vic20/games.basic/unexpanded/Venäläinen ruletti.prg
+"Vic as Piano"		vic20/games.basic/unexpanded/Vic as Piano.prg
+"Vic Asteroids"		vic20/games.basic/unexpanded/Vic Asteroids.prg
+"Vic Biorhythms"	vic20/games.basic/unexpanded/Vic Biorhythms.prg
+"Vic Biorhythms2"	vic20/games.basic/unexpanded/Vic Biorhythms2.prg
+"Vic Blitz"		vic20/games.basic/unexpanded/Vic Blitz.prg
+#"Vic Downs.b"		vic20/games.basic/unexpanded/Vic Downs.b.prg
+#"Vic Downs.f"		vic20/games.basic/unexpanded/Vic Downs.f.prg
+"Vic Dragon"		vic20/games.basic/unexpanded/Vic Dragon.prg
+"Vic Flip"		vic20/games.basic/unexpanded/Vic Flip.prg
+"Vic Jungle"		vic20/games.basic/unexpanded/Vic Jungle.prg
+"Vic Kong"		vic20/games.basic/unexpanded/Vic Kong.prg
+"Vic Shuffle"		vic20/games.basic/unexpanded/Vic Shuffle.prg
+"Vic Slang"		vic20/games.basic/unexpanded/Vic Slang.prg
+"Vic-tac-toe"		vic20/games.basic/unexpanded/Vic-tac-toe.prg
+"Vic Trap"		vic20/games.basic/unexpanded/Vic Trap.prg
+"Vic Viper"		vic20/games.basic/unexpanded/Vic Viper.prg
+"Wall Street"		vic20/games.basic/unexpanded/Wall Street.prg
+"Word Game"		vic20/games.basic/unexpanded/Word Game.prg
+"Word Match"		vic20/games.basic/unexpanded/Word Match.prg
+"Yahtzee"		vic20/games.basic/unexpanded/Yahtzee.prg
+"Zac-man"		vic20/games.basic/unexpanded/Zac-man.prg
+"Zap"			vic20/games.basic/unexpanded/Zap.prg
+)
+(
+*games.adventure
+"_"/games.ref.adventure
+*games.adventure.ref.adams
+"Scott Adams"/games.adventure.adams
+"African Escape"	vic20/games.basic/unexpanded/African Escape.prg
+"Arrow of Death"	vic20/games/8k/Arrow of Death.prg
+"Atlantis"		vic20/games.basic/16k/Atlantis (40t).prg
+"Big Bad Wolf"		vic20/games.basic/unexpanded/Big Bad Wolf.prg
+"Bomb Scare"		vic20/games.basic/unexpanded/Bomb Scare.prg
+"Castle Dark"		vic20/games.basic/16k/Castle Dark.prg
+"Castlemaze"		vic20/games.basic/16k/Castlemaze.prg
+"Caves"			vic20/games.basic/unexpanded/Caves.prg
+"Caves of Silver"	vic20/games.basic/8k/Caves of Silver.prg
+"Citadel"		vic20/games.basic/8k/Citadel.prg
+"Colonel's House"	vic20/games.basic/16k/Colonel's House.prg
+"Col's House(doc)"	vic20/games.basic/16k/Colonel's House-doc.prg
+"Computer"		vic20/games.basic/unexpanded/Computer Adventure.prg
+"Dark Dungeons"		vic20/games.basic/16k/Dark-dungeons.prg
+"Death House"		vic20/games.basic/unexpanded/Death House.prg
+"Death Ship"		vic20/games.basic/8k/Death Ship.prg
+"Dungeon"		vic20/games.basic/unexpanded/Dungeon.prg
+"Earthquake"		vic20/games.basic/8k/Earthquake.prg
+"Ench Journey"		vic20/games.basic/8k/Ench Journey.prg
+"Encounter"		vic20/games.basic/16k/Encounter.prg
+"Escape/Mt.Drash"	vic20/games.basic/8k/Escape from Mount Drash.prg
+"Fantasia Land"		vic20/games.basic/8k/Fantasia Land.prg
+"Hospital"		vic20/games.basic/unexpanded/Hospital Adventure.prg
+"King Tut"		vic20/games.basic/unexpanded/King Tut.prg
+"King Tut   (doc)"	vic20/games.basic/unexpanded/King Tut-doc.prg
+"Labyrintti"		vic20/games.basic/unexpanded/Labyrintti.prg
+"Lost Dutch Gold"	vic20/games.basic/16k/Lost Dutchman's Gold.prg
+"Marple Manor"		vic20/games.basic/8k/Marple Manor.prg
+"Miser House"		vic20/games.basic/16k/Miser House.prg
+"Moon Base alpha"	vic20/games.basic/unexpanded/Moon Base alpha.prg
+"Morloc House"		vic20/games.basic/16k/Morloc House.prg
+#"Mystery Island"	vic20/games.basic/16k/Mystery Island.prg
+#			vic20/games.basic/16k/Myst. Island.prg
+"Night Forest"		vic20/games.basic/8k/Night Forest.prg
+"Orb"			vic20/games.basic/16k/Orb.prg
+"Pyramid"		vic20/games.basic/8k/Pyramid.prg
+"Quest"			vic20/games.basic/8k/Quest.prg
+"Starship Escape"	vic20/games.basic/16k/Starship-escape.prg
+"Stoneville Manor"	vic20/games.basic/16k/Stoneville Manor.prg
+"Sword of Fargoal"	vic20/games.basic/16k/Sword of Fargoal.prg
+"Sword of Hrakel"	vic20/games/8k/Sword of Hrakel.prg
+"Sword of Hr(pic)"	vic20/games/8k/Sword of Hrakel-pic.prg
+"The Golden Baton"	vic20/games/8k/The Golden Baton.prg
+"The Lair"		vic20/games.basic/16k/The Lair.prg
+"The Time Machine"	vic20/games/8k/The Time Machine.prg
+"The Valley"		vic20/games.basic/16k/The Valley.prg
+"Tomb of Drewan"	vic20/games.basic/16k/Tomb of Drewan-2.prg
+)
+(
+*games.adventure.adams
+"_     (SYS32592)"/games.adventure.ref.adams
+"Adventure Land"	vic20/games/16k/Scott Adams/1.Adventure Land.prg
+"Pirate's Cove"		vic20/games/16k/Scott Adams/2.Pirate's Cove.prg
+"Mission Imposble"	vic20/games/16k/Scott Adams/3.Mission Impossible.prg
+"Voodoo Castle"		vic20/games/16k/Scott Adams/4.Voodoo Castle.prg
+"The Count"		vic20/games/16k/Scott Adams/5.The Count.prg
+)
+(
+*tools.cart
+"_"/root.tools.cart
+*tools.cart.ref.basic
+"BASIC Extensions"/tools.cart.basic
+*tools.cart.ref.ml
+"Machine Language"/tools.cart.ml
+*tools.cart.ref.office
+"Office"/tools.cart.office
+*tools.cart.ref.other
+"other"/tools.cart.other
+)
+(
+*tools.cart.basic
+"_"/tools.cart.ref.basic
+"BASIC v4"		vic20/roms/tools/4k/Basic-v4.prg
+"BASIC v5"		vic20/roms/tools/8k/BASIC V5.prg
+"Buti Toolkit"		vic20/roms/tools/4k/Buti Toolkit.prg
+"ExBASIC L2"		vic20/roms/tools/8k/ExBASIC L2.prg
+"Cassette Turbo"	vic20/roms/tools/4k/Cassette Turbo.prg
+"Combasic"		vic20/roms/tools/4k/Combasic.prg
+"Handy Toolkit"		vic20/roms/tools/8k/Handy Toolkit.prg
+"Hires Toolkit"		vic20/roms/tools/4k/Hires Toolkit.prg
+"Screen Master"		vic20/roms/4k/Screen Master.prg
+"Super Expander"3	vic20/roms/tools/4k/Super Expander.prg
+"VicTool"		vic20/roms/tools/4k/VicTool.prg
+)
+(
+*tools.cart.ml
+"_"/tools.cart.ref.ml
+"Assam"			vic20/roms/tools/8k/Assam.prg
+"Mikro Assembler"	vic20/roms/tools/8k/Mikro Assembler-6000.prg
+			vic20/roms/tools/8k/Mikro Assembler-a000.prg
+"HesMon"		vic20/roms/tools/4k/HesMon.prg
+#"Monitor SYS24576"	vic20/roms/tools/4k/Monitor-sys24576.prg
+# should start at $6000, not $2000
+"ProgAid SYS28681"	vic20/roms/tools/4k/Programmer's Aid-sys28681.prg
+# Vicmon-2000.prg should really start at $4000
+"Vicmon  SYS24576"	vic20/roms/tools/4k/Vicmon-6000.prg
+"Vicmon  SYS45056"	vic20/roms/tools/4k/Vicmon-b000.prg
+)
+(
+*tools.cart.office
+"_"/tools.cart.ref.office
+"HesWriter"		vic20/roms/tools/8k/HesWriter.prg
+"HouseholdFinance"	vic20/roms/tools/8k/Household Finance.prg
+"Personal Finance"	vic20/roms/tools/8k/Personal Finance.prg
+"Vic Graph"		vic20/roms/tools/8k/Vic Graph.prg
+"Vic Stat"		vic20/roms/tools/8k/Vic Stat.prg
+"Wordcraft 20"8		vic20/roms/tools/8k/Wordcraft 20-6000.prg
+	   		vic20/roms/tools/8k/Wordcraft 20-a000.prg
+"Wordcraft"		vic20/roms/tools/8k/Wordcraft-6000.prg
+			vic20/roms/tools/8k/Wordcraft-a000.prg
+"Write Now"		vic20/roms/tools/8k/Write Now-sys41000.prg
+)
+(
+*tools.cart.other
+"_"/tools.cart.ref.other
+
+#"Rabbit  SYS38912"	vic20/roms/tools/4k/Rabbit-sys38912.prg
+# not possible on this hardware
+"Victerm 40"		vic20/roms/tools/4k/Victerm 40.prg
+#"LADS    SYS48641"	vic20/roms/tools/8k/LADS-be01.prg
+# unsupported start address; should be padded at a000
+"PET Loader"8		vic20/roms/tools/8k/PET Loader.prg
+"QBFox?  SYS32692"	vic20/roms/tools/8k/Quick Brown Fox-sys32692.prg
+"Synthesound"		vic20/roms/tools/8k/Synthesound.prg
+"Turtle Graphics"	vic20/roms/tools/8k/Turtle Graphics-2.prg
+"VC-Extra"		vic20/roms/tools/8k/VC-Extra.prg
+"Vic Forth 1.00"	vic20/roms/tools/8k/Vic Forth 1.00.prg
+"Vic Forth 1.10"	vic20/roms/tools/8k/Vic Forth 1.10.prg
+)
+(
+*demos.cart
+"_"/root.demos.cart
+"Color Test"	vic20/roms/other/Color Test.prg
+"Inventions"	vic20/roms/other/Inventions.prg
+"Synthesong"	vic20/roms/other/Synthesong.prg
+"The Mad Boogy"	vic20/roms/other/The Mad Boogy.prg
+)
