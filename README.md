@@ -1,4 +1,4 @@
-= Vic UltiMem software, version 1.0.1, 2016-07-11 =
+# Vic UltiMem software
 
 The UltiMem is an "all-in-one" cartridge for the Commodore Vic-20 that
 consists of in-system programmable Flash ROM and RAM, enough for
@@ -12,7 +12,7 @@ RAM), of which only some prototypes were built.  It comes in two
 variants: VICMIDI with 512KiB+128KiB (with 256KiB or 512KiB RAM options)
 and 8MiB+1MiB.
 
-== Installation ==
+## Installation
 
 You can try the UltiMem in VICE, starting with r30371, as follows.
 
@@ -35,7 +35,7 @@ Copy the files flash4file.prg and ultimem8m.bin to a medium that is
 accessible from a Vic-20 that is equipped with the UltiMem.  Start the
 Vic-20 in unexpanded memory configuration.
 
-=== Enabling a Fastloader ===
+### Enabling a Fastloader
 
 Because flash4file.prg uses the KERNAL file routines for loading the
 data, it is slow.  The good news is that fastloaders should work.  If
@@ -62,7 +62,7 @@ Alternatively, press f5, 4, and f7, then
 
 Now that the fastloader is installed, you can proceed to the next step.
 
-=== Installation from a File ===
+### Installation from a File
 
 Load the loader:
 
@@ -89,7 +89,7 @@ Files are no longer compressed, and ROM images can be stored in 8KiB
 blocks on their own, so that ROM cartridge images can be switched
 quickly, without involving any copying.
 
-== Features ==
+## Features
 
 The RAM expansion type can be selected programmatically.  Flash or RAM
 can be mapped at any of the expansion areas: RAM[123] ($0400-$0fff),
@@ -107,7 +107,7 @@ viewed from the front of the keyboard) is a reset button.  Holding the
 middle button while pressing the right button (reset) will unmap the
 flash from memory, which is useful if a non-working image was written.
 
-== Software ==
+## Software
 
 All software is licensed under the GNU General Public License, either
 version 2 (or at your option) any later version of the license.
@@ -192,7 +192,7 @@ f5		Start ramtest.prg (RAM test, long)
 f7		Start banktest.prg (bank register test)
 f8		Start flash4file.prg (Flash memory programmer)
 
-== Version history ==
+## Version history
 
 Version 1.0.1, 2016-07-11
 
@@ -204,7 +204,7 @@ Version 1.0.1, 2016-07-11
 Version 1.0, 2016-06-24
 Initial public release
 
-== Acknowledgements ==
+## Acknowledgements
 
 I would like to express my thanks to the following people:
 
