@@ -92,11 +92,18 @@ quickly, without involving any copying.
 ## Features
 
 The RAM expansion type can be selected programmatically.  Flash or RAM
-can be mapped at any of the expansion areas: RAM[123] ($0400-$0fff),
-BLK1 ($2000-$3fff), BLK2 ($4000-$5fff), BLK3 ($6000-$7fff), BLK5
-($a000-$bfff), I/O2 ($9800-$9bff), I/O3 ($9c00-$9fff).  For each block,
-there are four possible settings: unmapped, RAM, write-protected RAM,
-and flash.
+can be mapped at any of the expansion areas:
+
+    RAM[123] ($0400-$0fff)
+    BLK1 ($2000-$3fff)
+    BLK2 ($4000-$5fff)
+    BLK3 ($6000-$7fff)
+    BLK5 ($a000-$bfff)
+    I/O2 ($9800-$9bff)
+    I/O3 ($9c00-$9fff)
+
+For each block, there are four possible settings:
+unmapped, RAM, write-protected RAM, and flash.
 
 The register file is mapped at $9ff0-$9fff.  For maximum compatibility,
 it can be disabled until reset or a special re-enabling sequence.
