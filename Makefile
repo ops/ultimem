@@ -1,6 +1,4 @@
-CC = clang
 CFLAGS = -O3 -Wall -pedantic
-#CFLAGS = -g -Wall -pedantic
 
 TARGET = makecart
 TARGET_FLASH = flash4file
