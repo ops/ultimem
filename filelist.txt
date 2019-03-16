@@ -67,7 +67,7 @@ f8
 			vic20/roms/16k/Buck Rogers-a000.prg
 "Bug Crusher"		vic20/roms/4k/Bug Crusher.prg
 # the 4k ROM really starts at 3000 instead of 2000
-"Cannonball Blitz"	vic20/roms/16k/Cannonball Blitz-3000.prg
+"Cannonball Blitz"	vic20/roms/16k/Cannonball Blitz-2000.prg
 			vic20/roms/16k/Cannonball Blitz-a000.prg
 "Capture the Flag"	vic20/roms/8k/Capture the Flag.prg
 "Catch a Snatch"	vic20/roms/8k/Catch a Snatch.prg
@@ -1109,7 +1109,7 @@ f8
 #"LADS    SYS48641"	vic20/roms/tools/8k/LADS-be01.prg
 # unsupported start address; should be padded at a000
 "PET Loader"8		vic20/roms/tools/8k/PET Loader.prg
-"QBFox?  SYS32692"	vic20/roms/tools/8k/Quick Brown Fox-sys32692.prg
+"QBFox?  SYS24576"	vic20/roms/tools/8k/Quick Brown Fox-sys24576.prg
 "Synthesound"		vic20/roms/tools/8k/Synthesound.prg
 "Turtle Graphics"	vic20/roms/tools/8k/Turtle Graphics-2.prg
 "VC-Extra"		vic20/roms/tools/8k/VC-Extra.prg
