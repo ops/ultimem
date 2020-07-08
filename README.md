@@ -145,6 +145,7 @@ you can enter the Commodore BASIC interpreter in different memory
 configurations:
 
 |key 	|memory configuration|
+| --- | --- |
 |STOP 	|unexpanded (3583 bytes free)|
 |3 	|3 KiB memory expansion (6655 bytes free)|
 |8 	|24 KiB memory expansion (28159 bytes free)|
@@ -157,6 +158,7 @@ normally unmapped address space ($9ff0-$9fff).
 The menu software is accessed by the keyboard as follows.
 
 |key	 	|memory configuration|
+| --- | --- |
 |a-z 		|jump to the next item starting with the letter|
 |A-Z 		|jump to the previous item starting with the letter|
 |CRSR UP	|line up|
