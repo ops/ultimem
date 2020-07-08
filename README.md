@@ -148,8 +148,7 @@ configurations:
 | --- | --- |
 |STOP 	|unexpanded (3583 bytes free)|
 |3 	|3 KiB memory expansion (6655 bytes free)|
-|8 	|24 KiB memory expansion (28159 bytes free)
-	(compatible with 8 KiB and 16 KiB)|
+|8 	|24 KiB memory expansion (28159 bytes free). Compatible with 8 KiB and 16 KiB)|
 
 If you additionally hold the SHIFT key, the configuration registers
 will be hidden, for maximum compatibility with programs that write to
