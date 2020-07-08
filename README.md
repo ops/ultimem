@@ -173,6 +173,8 @@ The menu software is accessed by the keyboard as follows.
 
 In the images generated from the Makefile:
 
+|Key|Action|
+| --- | --- |
 |f1		|Start ultimem.prg (quick reference, RAM config selection)|
 |f5		|Start ramtest.prg (RAM test, long)|
 |f7		|Start banktest.prg (bank register test)|
