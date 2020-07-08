@@ -144,10 +144,10 @@ By holding a key during hardware reset or pressing a key in the menu,
 you can enter the Commodore BASIC interpreter in different memory
 configurations:
 
-key 	memory configuration
-STOP 	unexpanded (3583 bytes free)
-3 	3 KiB memory expansion (6655 bytes free)
-8 	24 KiB memory expansion (28159 bytes free)
+|key 	|memory configuration
+|STOP 	|unexpanded (3583 bytes free)
+|3 	|3 KiB memory expansion (6655 bytes free)
+|8 	|24 KiB memory expansion (28159 bytes free)
 	(compatible with 8 KiB and 16 KiB)
 
 If you additionally hold the SHIFT key, the configuration registers
@@ -156,25 +156,25 @@ normally unmapped address space ($9ff0-$9fff).
 
 The menu software is accessed by the keyboard as follows.
 
-key	 	memory configuration
-a-z 		jump to the next item starting with the letter
-A-Z 		jump to the previous item starting with the letter
-CRSR UP		line up
-CRSR DOWN	line down
-CRSR LEFT	page up
-CRSR RIGHT	page down
-HOME 		first item
-SHIFT+HOME	last item
-RETURN 		activate the selected item
-SHIFT+RETURN 	activate the selected item, hiding the configuration registers
-f1 to f8	hotkeys for activating menu items
+|key	 	|memory configuration
+|a-z 		|jump to the next item starting with the letter
+|A-Z 		|jump to the previous item starting with the letter
+|CRSR UP	|line up
+|CRSR DOWN	|line down
+|CRSR LEFT	|page up
+|CRSR RIGHT	|page down
+|HOME 		|first item
+|SHIFT+HOME	|last item
+|RETURN 	|activate the selected item
+|SHIFT+RETURN 	|activate the selected item, hiding the configuration registers
+|f1 to f8	|hotkeys for activating menu items
 
-		In the images generated from the Makefile:
+In the images generated from the Makefile:
 
-f1		Start ultimem.prg (quick reference, RAM config selection)
-f5		Start ramtest.prg (RAM test, long)
-f7		Start banktest.prg (bank register test)
-f8		Start flash4file.prg (Flash memory programmer)
+|f1		|Start ultimem.prg (quick reference, RAM config selection)
+|f5		|Start ramtest.prg (RAM test, long)
+|f7		|Start banktest.prg (bank register test)
+|f8		|Start flash4file.prg (Flash memory programmer)
 
 ## Version history
 
